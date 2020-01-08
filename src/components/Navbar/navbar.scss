@@ -1,0 +1,21 @@
+@import "../../scss/variables.scss";
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+
+  .navbar {
+    list-style-type: none;
+    color: white;
+
+    position: fixed;
+    top: 40px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    z-index: 10;
+  }
+}

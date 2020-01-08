@@ -1,0 +1,7 @@
+.hero-container {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  background-color: #153261;
+  height: 800px;
+}
+/*# sourceMappingURL=hero.css.map */
