@@ -1,0 +1,83 @@
+.project-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.project-card-container .project-card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+  border: 10px solid;
+  width: 90%;
+}
+
+.project-card-container .project-card-top .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-card-container .project-card-top .logo-container .project-logo {
+  margin: 20px 0;
+}
+
+.project-card-container .project-card-top .project-gif {
+  margin: 40px 0;
+}
+
+.project-card-container .project-card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: -1px;
+  width: 90%;
+  height: 100px;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.project-card-container .project-card-bottom h2 {
+  padding: 0 50px 10px;
+}
+
+.project-card-container.tracker .project-card-top {
+  background-color: black;
+  border-color: green;
+}
+
+.project-card-container.tracker .project-card-bottom {
+  background-color: green;
+}
+/*# sourceMappingURL=project-card.css.map */
