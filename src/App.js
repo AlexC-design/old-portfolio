@@ -1,8 +1,8 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
 
 import Navbar from "./components/Navbar/Navbar";
-import { routes } from "./pages/routes/routes";
 
 import "./css/app.css";
 
@@ -12,7 +12,10 @@ export default class App extends React.Component {
       <div>
         <HashRouter basename="/">
           <Navbar />
-          {routes()}
+          <Route path="/" exact component={HomePage} />
+          {/* <Route path="/project/:id" exact component={ProjectPage} />
+          <Route path="/about" exact component={AboutPage} />
+          <Route path="/contact" exact component={ContactPage} /> */}
         </HashRouter>
       </div>
     );
