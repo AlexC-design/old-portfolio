@@ -23,6 +23,19 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   z-index: 10;
+}
+
+.navbar-container .navbar .navbar-link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-container .navbar .navbar-link.active {
+  font-size: 1.1em;
+  font-weight: bold;
 }
 /*# sourceMappingURL=navbar.css.map */
