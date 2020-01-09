@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Hero from "../../components/Hero/Hero";
 import { HeroText } from "../../components/HeroText/HeroText";
 import { HeroImage } from "../../components/HeroImage/HeroImage";
+import { MainButton } from "../../components/MainButton/MainButton";
 
 export default class HomePage extends Component {
   render() {
@@ -11,6 +12,10 @@ export default class HomePage extends Component {
           <HeroText layout={`personal-details`} />
           <HeroImage />
         </Hero>
+        <MainButton text="Websites" color="primary" selectable={true} />
+        <MainButton text="Websites" color="primary" selectable={true} />
+        <MainButton text="Websites" color="primary" selectable={false} />
+        <MainButton text="Websites" color="primary" selectable={false} />
       </div>
     );
   }

@@ -1,0 +1,16 @@
+.tool-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+  p {
+    color: white;
+    padding-bottom: 10px;
+  }
+
+  img {
+      transform: scale(0.8);
+  }
+}
