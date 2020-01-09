@@ -7,9 +7,44 @@
   border-radius: 10px;
   font-size: 30px;
 
-  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .live-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: green;
+    box-shadow: 0 0 10px 2px green;
+  }
 
   &.primary {
-    background-color: color(primary);
+    background-color: transparent;
+    border: 2px solid color(primary-dark);
+
+    color: color(primary-dark);
+
+    &.selected {
+      background-color: color(primary-dark);
+      border: 0;
+
+      color: white;
+    }
+  }
+
+  &.dark {
+    background-color: transparent;
+    border: 2px solid color(dark-gray);
+
+    color: color(dark-gray);
+
+    &.selected {
+      background-color: color(dark-gray);
+      border: 0;
+
+      color: white;
+    }
   }
 }

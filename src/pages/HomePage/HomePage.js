@@ -13,10 +13,15 @@ export default class HomePage extends Component {
           <HeroText layout={`personal-details`} />
           <HeroImage />
         </Hero>
-        <MainButton text="Websites" color="primary" selectable={true} />
-        <MainButton text="Websites" color="primary" selectable={true} />
-        <MainButton text="Websites" color="primary" selectable={false} />
-        <MainButton text="Websites" color="primary" selectable={false} />
+        <MainButton
+          text="Websites"
+          color="primary"
+          icon="github"
+          filled={true}
+        />
+        <MainButton text="Websites" color="primary" icon="live" filled={false} />
+        <MainButton text="Websites" color="dark" />
+        <MainButton text="Websites" color="dark" />
 
         <ProjectsSection />
       </div>
