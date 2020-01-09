@@ -13,7 +13,7 @@ export default class Hero extends Component {
   render() {
     return (
       <div className={`hero-container ${this.state.color}`}>
-        {this.props.children}
+        <div className="hero-content">{this.props.children}</div>
       </div>
     );
   }

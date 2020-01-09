@@ -1,0 +1,28 @@
+@import "../../scss/variables.scss";
+
+.hero-text {
+  color: white;
+  flex: 1;
+
+  box-sizing: border-box;
+  padding-right: 50px;
+  max-width: 50%;
+
+  h1 {
+    margin-bottom: 0.1em;
+  }
+
+  h2 {
+    margin-bottom: 1em;
+    color: color(accent);
+  }
+
+  p {
+    margin: 0.8em 0;
+  }
+
+  a {
+    font-weight: bold;
+    color: color(accent);
+  }
+}

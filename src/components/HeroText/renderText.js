@@ -6,8 +6,10 @@ export const renderText = page => {
       return (
         <>
           <p>
-            Hi,<br></br> I'm Alex, a London based Web Developer with a
-            background in Digital Art and Design.
+            Hi!
+            <br />
+            I'm Alex, a London based Web Developer with a background in Digital
+            Art and Design.
           </p>
           <p>Have look at some of my work below!</p>
         </>
@@ -16,7 +18,9 @@ export const renderText = page => {
       return (
         <>
           <p>
-            Hi! I'm Alex, a Web Developer with a background in Digital Art and
+            Hi!
+            <br />
+            I'm Alex, a Web Developer with a background in Digital Art and
             Design.
           </p>
           <p>

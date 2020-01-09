@@ -1,8 +1,9 @@
 $colors: (
-  primary: #153261,
+  primary: #1a2c49,
+  primary2: #133367,
   primary-dark: #0f1f38,
   secondary: #6fdcff,
-  accent1: #ffb800
+  accent: #ffb800
 );
 
 @function color($color-name) {

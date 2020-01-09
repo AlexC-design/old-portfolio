@@ -1,18 +1,19 @@
 import React from "react";
+import { HashRouter } from "react-router-dom";
+
 import Navbar from "./components/Navbar/Navbar";
+import { routes } from "./pages/routes/routes";
 
 import "./css/app.css";
-import Hero from "./components/Hero/Hero";
-import { HeroText } from "./components/HeroText/HeroText";
 
 export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <Hero color={`primary`}>
-          <HeroText layout={`personal-details`} />
-        </Hero>
+        <HashRouter basename="/">
+          <Navbar />
+          {routes()}
+        </HashRouter>
       </div>
     );
   }

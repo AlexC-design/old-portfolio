@@ -3,9 +3,21 @@
 .hero-container {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 
-  height: 800px;
+  height: 500px;
+  padding-top: 200px;
 
+  display: flex;
+  justify-content: center;
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1080px;
+  }
   &.primary {
-    background-color: color(primary);
+    padding-top: 160px;
+    background-image: linear-gradient(color(primary), color(primary2));
   }
 }

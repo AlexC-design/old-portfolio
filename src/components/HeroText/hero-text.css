@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=hero-text.css.map */
+.hero-text {
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 50px;
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  margin-bottom: 0.1em;
+}
+
+.hero-text h2 {
+  margin-bottom: 1em;
+  color: #ffb800;
+}
+
+.hero-text p {
+  margin: 0.8em 0;
+}
+
+.hero-text a {
+  font-weight: bold;
+  color: #ffb800;
+}
+/*# sourceMappingURL=hero-text.css.map */

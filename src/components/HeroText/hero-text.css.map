@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;EACZ,IAAI,EAAE,CAAC;EAEP,UAAU,EAAE,UAAU;EACtB,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,GAAG;CAmBf;;AAzBD,AAQE,UARQ,CAQR,EAAE,CAAC;EACD,aAAa,EAAE,KAAK;CACrB;;AAVH,AAYE,UAZQ,CAYR,EAAE,CAAC;EACD,aAAa,EAAE,GAAG;EAClB,KAAK,ECXC,OAAO;CDYd;;AAfH,AAiBE,UAjBQ,CAiBR,CAAC,CAAC;EACA,MAAM,EAAE,OAAO;CAChB;;AAnBH,AAqBE,UArBQ,CAqBR,CAAC,CAAC;EACA,WAAW,EAAE,IAAI;EACjB,KAAK,ECpBC,OAAO;CDqBd",
     "sources": [
-        "hero-text.scss"
+        "hero-text.scss",
+        "../../scss/variables.scss"
     ],
     "names": [],
     "file": "hero-text.css"
