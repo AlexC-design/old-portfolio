@@ -3,6 +3,9 @@
 .hero-container {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 
-  background-color: color(primary);
   height: 800px;
+
+  &.primary {
+    background-color: color(primary);
+  }
 }
