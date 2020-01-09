@@ -5,8 +5,11 @@ import { HeroImage } from "../../components/HeroImage/HeroImage";
 import { MainButton } from "../../components/MainButton/MainButton";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 
+import projects from "../../projects";
+
 export default class HomePage extends Component {
   render() {
+    console.log(this.props)
     return (
       <div className="home-page">
         <Hero color={`primary`}>
@@ -19,11 +22,16 @@ export default class HomePage extends Component {
           icon="github"
           filled={true}
         />
-        <MainButton text="Websites" color="primary" icon="live" filled={false} />
+        <MainButton
+          text="Websites"
+          color="primary"
+          icon="live"
+          filled={false}
+        />
         <MainButton text="Websites" color="dark" />
         <MainButton text="Websites" color="dark" />
 
-        <ProjectsSection />
+        <ProjectsSection projects={projects} />
       </div>
     );
   }

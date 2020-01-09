@@ -35,7 +35,11 @@ export const renderText = page => {
           <p>
             You can see some of my concept art and illustration work in my
             previous portfolio at{" "}
-            <a href="https://allexc.crevado.com/" target="_blank">
+            <a
+              href="https://allexc.crevado.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               allexc.crevado.com
             </a>
           </p>
