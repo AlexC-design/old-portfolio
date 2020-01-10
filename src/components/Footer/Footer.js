@@ -3,19 +3,24 @@ import githubIcon from "../../assets/icons/github-icon.svg";
 import linkedinIcon from "../../assets/icons/linkedin-icon.svg";
 
 import "./footer.css";
+import { withRouter } from "react-router-dom";
 
-export default function Footer({ expandState = "contracted" }) {
+const Footer = props => {
   return (
-    <div className={`footer ${expandState}`}>
+    <div className={`footer ${props.location.pathname.replace("/", "")}`}>
       <div className="text-container">
-        <h1 className="name">Alexandru Ciobotaru</h1>
+        <h3 className="name">Alexandru Ciobotaru</h3>
         <div className="phone-number">
-          <img className="phone-icon" src="" alt="phone icon" />
-          <h1>+447432703853</h1>
+          {props.location.pathname === "/contact" && (
+            <img className="phone-icon" src="" alt="phone icon" />
+          )}
+          <h3>+447432703853</h3>
         </div>
         <div className="email-address">
-          <img className="mail-icon" src="" alt="mail icon" />
-          <h1>alex94.design@gmail.com</h1>
+          {props.location.pathname === "/contact" && (
+            <img className="mail-icon" src="" alt="mail icon" />
+          )}
+          <h3>alex94.design@gmail.com</h3>
         </div>
       </div>
       <div className="icons-container">
@@ -24,4 +29,6 @@ export default function Footer({ expandState = "contracted" }) {
       </div>
     </div>
   );
-}
+};
+
+export default withRouter(Footer);

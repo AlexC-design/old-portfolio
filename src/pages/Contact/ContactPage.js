@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 
+import "./contact-page.css";
+
 export default class ContactPage extends Component {
   render() {
-    return <div></div>;
+    return <div className="contact-page"></div>;
   }
 }

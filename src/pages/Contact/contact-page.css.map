@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,0CAIjB;CACF",
+    "sources": [
+        "contact-page.scss",
+        "../../scss/variables.scss"
+    ],
+    "names": [],
+    "file": "contact-page.css"
+}

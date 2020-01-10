@@ -1,0 +1,10 @@
+@import "../../scss/variables.scss";
+
+.contact-page {
+  height: 100vh;
+  background-image: linear-gradient(
+    color(primary),
+    color(primary),
+    color(primary2)
+  );
+}
