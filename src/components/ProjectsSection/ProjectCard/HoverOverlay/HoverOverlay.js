@@ -8,12 +8,16 @@ export const HoverOverlay = ({ mainTech, secondaryTech, projectName }) => {
       <h3 className="overlay-title">Technologies used:</h3>
       <div className="tech-section">
         {mainTech.map(name => (
-          <div className="tech-tab">{name}</div>
+          <div key={name} className="tech-tab">
+            {name}
+          </div>
         ))}
       </div>
       <div className="tech-section">
         {secondaryTech.map(name => (
-          <div className="tech-tab">{name}</div>
+          <div key={name} className="tech-tab">
+            {name}
+          </div>
         ))}
       </div>
     </div>

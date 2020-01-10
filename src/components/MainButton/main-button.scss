@@ -12,6 +12,10 @@
   justify-content: center;
   align-items: center;
 
+  &:focus {
+    outline: none;
+  }
+
   .live-icon {
     width: 10px;
     height: 10px;
@@ -25,6 +29,14 @@
     border: 2px solid color(primary-dark);
 
     color: color(primary-dark);
+
+    &:hover {
+      background-color: mix(color(primary-dark), rgba(255, 255, 255, 0.5), 10%);
+    }
+
+    &:active {
+      background-color: mix(color(accent), rgba(0, 0, 0, 0));
+    }
 
     &.selected {
       background-color: color(primary-dark);

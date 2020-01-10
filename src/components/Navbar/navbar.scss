@@ -24,7 +24,7 @@
     z-index: 10;
 
     &.primary {
-      background-color: mix(color(primary), rgba(0, 0, 0, 0), 50%);
+      background-color: mix(color(primary), rgba(0, 0, 0, 0), 80%);
     }
 
     .navbar-link {
