@@ -11,17 +11,19 @@ import "./about-page.css";
 export default class AboutPage extends Component {
   render() {
     return (
-      <div className="home-page">
+      <div className="about-page">
         <Hero page={`about`}>
           <HeroText layout={`about-details`} />
           <HeroImage />
         </Hero>
-        <h1>Tools and Technologies</h1>
-        <h1>Main</h1>
-        <ToolsIcons />
-        <div className="other-tools-section">
-          <OtherTools title="Design" tools={designTools} />
-          <OtherTools title="Code" tools={codeTools} />
+        <div className="tech-section">
+          <h1>Tools and Technologies</h1>
+          <h2>Main</h2>
+          <ToolsIcons />
+          <div className="other-tools-section">
+            <OtherTools title="Design" tools={designTools} />
+            <OtherTools title="Code" tools={codeTools} />
+          </div>
         </div>
       </div>
     );

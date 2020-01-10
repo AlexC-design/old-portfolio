@@ -10,7 +10,7 @@ class Navbar extends Component {
   pathToProject = () => {
     if (
       this.props.location.pathname === "/" ||
-      this.props.location.pathname === "about"
+      this.props.location.pathname === "/about"
     ) {
       return "primary";
     } else {

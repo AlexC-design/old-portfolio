@@ -1,0 +1,27 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+
+  .tech-section {
+    width: 1800px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin: 50px 0;
+    }
+    h2 {
+      margin: 50px 0;
+    }
+
+    .other-tools-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
