@@ -9,6 +9,8 @@
   display: flex;
   justify-content: center;
 
+  transition: height 1s ease-out;
+
   .hero-content {
     display: flex;
     flex-direction: row;
@@ -16,12 +18,27 @@
     align-items: flex-start;
     width: 1080px;
   }
-  &.primary {
+
+  &.home {
     padding-top: 160px;
     background-image: linear-gradient(
       color(primary),
       color(primary),
       color(primary2)
     );
+  }
+
+  &.about {
+    height: 700px;
+    padding-top: 160px;
+    background-image: linear-gradient(
+      color(primary),
+      color(primary),
+      color(primary2)
+    );
+
+    .hero-content {
+      flex-direction: row-reverse;
+    }
   }
 }

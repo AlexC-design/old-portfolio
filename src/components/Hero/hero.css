@@ -9,6 +9,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: height 1s ease-out;
+  transition: height 1s ease-out;
 }
 
 .hero-container .hero-content {
@@ -28,9 +30,23 @@
   width: 1080px;
 }
 
-.hero-container.primary {
+.hero-container.home {
   padding-top: 160px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1a2c49), color-stop(#1a2c49), to(#133367));
   background-image: linear-gradient(#1a2c49, #1a2c49, #133367);
+}
+
+.hero-container.about {
+  height: 700px;
+  padding-top: 160px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1a2c49), color-stop(#1a2c49), to(#133367));
+  background-image: linear-gradient(#1a2c49, #1a2c49, #133367);
+}
+
+.hero-container.about .hero-content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 /*# sourceMappingURL=hero.css.map */

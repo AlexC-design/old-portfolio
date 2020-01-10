@@ -13,6 +13,14 @@ export const HeroText = ({ layout }) => {
           {renderText(`home`)}
         </div>
       );
+    case "about-details":
+      return (
+        <div className={`hero-text ${layout}`}>
+          <h1>Alexandru Ciobotaru</h1>
+          <h2>Web Developer</h2>
+          {renderText(`about`)}
+        </div>
+      );
     case "project-details":
       return (
         <div className={`hero-text ${layout}`}>
