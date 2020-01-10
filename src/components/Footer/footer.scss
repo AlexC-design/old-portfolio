@@ -1,7 +1,41 @@
 @import "../../scss/variables.scss";
 
 .footer {
-  width: 100vw;
   height: 500px;
   background-color: color(primary-dark);
+
+  box-sizing: border-box;
+  padding: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  color: white;
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+  }
+
+  .icons-container {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      padding-right: 50px;
+    }
+  }
+
+  &.contracted {
+    .phone-icon {
+      display: none;
+    }
+    .mail-icon {
+      display: none;
+    }
+  }
 }

@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import Navbar from "./components/Navbar/Navbar";
 
 import "./css/app.css";
+import Footer from "./components/Footer/Footer";
 
 export default class App extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
           <Route path="/about" exact component={AboutPage} />
           <Route path="/contact" exact component={ContactPage} /> */}
         </HashRouter>
+        <Footer />
       </div>
     );
   }

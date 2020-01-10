@@ -9,22 +9,6 @@ import portfolioLogo from "./assets/logos/portfolio-logo.png";
 
 const projects = [
   {
-    name: "tracker",
-    logo: trackerLogo,
-    gif: trackerGif,
-    text:
-      "Application that helps teams maintain and manage issues during product development",
-    software: [
-      "REACT",
-      "REDUX",
-      "REDUX-SAGA",
-      "REACT-ROUTER",
-      "HTML/CSS",
-      "JAVASCRIPT"
-    ],
-    secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
-  },
-  {
     name: "cluster",
     logo: movieClusterLogo,
     gif: trackerGif,
@@ -41,19 +25,36 @@ const projects = [
     secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
   },
   {
-    name: "primal",
-    logo: primalGymLogo,
-    gif: trackerGif,
-    text: "Fitness Gym Landing Page",
-    software: ["REACT", "HTML/CSS", "JAVASCRIPT"],
-    secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
-  },
-  {
     name: "folio",
     logo: portfolioLogo,
     gif: trackerGif,
     text: "Personal portfolio website showcasing some of my projects",
     software: ["REACT", "REACT-ROUTER", "HTML/CSS", "JAVASCRIPT"],
+    secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
+  },
+  {
+    name: "tracker",
+    logo: trackerLogo,
+    gif: trackerGif,
+    text:
+      "Application that helps teams maintain and manage issues during product development",
+    software: [
+      "REACT",
+      "REDUX",
+      "REDUX-SAGA",
+      "REACT-ROUTER",
+      "HTML/CSS",
+      "JAVASCRIPT"
+    ],
+    secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
+  },
+
+  {
+    name: "primal",
+    logo: primalGymLogo,
+    gif: trackerGif,
+    text: "Fitness Gym Landing Page",
+    software: ["REACT", "HTML/CSS", "JAVASCRIPT"],
     secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
   }
 ];

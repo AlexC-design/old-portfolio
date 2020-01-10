@@ -4,18 +4,18 @@ import linkedinIcon from "../../assets/icons/linkedin-icon.svg";
 
 import "./footer.css";
 
-export default function Footer() {
+export default function Footer({ expandState = "contracted" }) {
   return (
-    <div className={`footer`}>
+    <div className={`footer ${expandState}`}>
       <div className="text-container">
-        <h2 className="name">Alexandru Ciobotaru</h2>
+        <h1 className="name">Alexandru Ciobotaru</h1>
         <div className="phone-number">
-          <img src="" alt="phone-icon" />
-          <h2>+447432703853</h2>
+          <img className="phone-icon" src="" alt="phone icon" />
+          <h1>+447432703853</h1>
         </div>
         <div className="email-address">
-          <img src="" alt="mail-icon" />
-          <h2>alex94.design@gmail.com</h2>
+          <img className="mail-icon" src="" alt="mail icon" />
+          <h1>alex94.design@gmail.com</h1>
         </div>
       </div>
       <div className="icons-container">
