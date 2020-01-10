@@ -7,10 +7,21 @@ class Navbar extends Component {
   pathCheck = path =>
     this.props.location.pathname === path ? "active" : "inactive";
 
+  pathToProject = () => {
+    if (
+      this.props.location.pathname === "/" ||
+      this.props.location.pathname === "about"
+    ) {
+      return "primary";
+    } else {
+      return this.props.location.pathname.replace("/", "");
+    }
+  };
+
   render() {
     return (
       <div className="navbar-container">
-        <ul className="navbar">
+        <ul className={`navbar ${this.pathToProject()}`}>
           <Link to="/" className={`navbar-link ${this.pathCheck("/")}`}>
             Home
           </Link>

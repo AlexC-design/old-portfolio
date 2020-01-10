@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 
 import "./project-card.css";
+import { HoverOverlay } from "./HoverOverlay/HoverOverlay";
 
 export default class ProjectCard extends Component {
   render() {
     return (
       <div className={`project-card-container ${this.props.project.name}`}>
         <div className="project-card-top">
+          <HoverOverlay
+            projectName={this.props.project.name}
+            mainTech={this.props.project.software}
+            secondaryTech={this.props.project.secondarySoftware}
+          />
           <div className="logo-container">
             <img
               className="project-logo"

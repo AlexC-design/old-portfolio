@@ -1,3 +1,5 @@
+@import "../../../scss/variables.scss";
+
 .project-card-container {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,19 @@
 
   margin-bottom: 50px;
 
+  transition: transform 0.4s ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+
+    .hover-overlay {
+      opacity: 100%;
+    }
+  }
+
   .project-card-top {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,12 +36,12 @@
       justify-content: center;
 
       .project-logo {
-          margin: 20px 0;
+        margin: 20px 0;
       }
     }
 
     .project-gif {
-        margin: 40px 0;
+      margin: 40px 0;
     }
   }
 
@@ -40,24 +54,53 @@
     margin-top: -1px;
     width: 90%;
     height: 100px;
-    
-    
+
     color: white;
     border-radius: 0 0 10px 10px;
 
     h2 {
-        padding: 0 50px 10px;
+      padding: 0 50px 10px;
     }
   }
 
   &.tracker {
     .project-card-top {
-      background-color: black;
-      border-color: green;
+      background-color: color(project-dark);
+      border-color: color(tracker-green);
     }
 
     .project-card-bottom {
-      background-color: green;
+      background-color: color(tracker-green);
+    }
+  }
+  &.primal {
+    .project-card-top {
+      background-color: color(project-dark);
+      border-color: color(primal-red);
+    }
+
+    .project-card-bottom {
+      background-color: color(primal-red);
+    }
+  }
+  &.folio {
+    .project-card-top {
+      background-color: color(project-dark);
+      border-color: color(folio-blue);
+    }
+
+    .project-card-bottom {
+      background-color: color(folio-blue);
+    }
+  }
+  &.cluster {
+    .project-card-top {
+      background-color: color(project-dark);
+      border-color: color(cluster-purple);
+    }
+
+    .project-card-bottom {
+      background-color: color(cluster-purple);
     }
   }
 }

@@ -10,8 +10,10 @@
 .navbar-container .navbar {
   list-style-type: none;
   color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
   position: fixed;
-  top: 40px;
+  top: 30px;
   width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +29,10 @@
       -ms-flex-align: end;
           align-items: flex-end;
   z-index: 10;
+}
+
+.navbar-container .navbar.primary {
+  background-color: rgba(26, 44, 73, 0.5);
 }
 
 .navbar-container .navbar .navbar-link {

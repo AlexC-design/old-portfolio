@@ -9,7 +9,6 @@ import projects from "../../projects";
 
 export default class HomePage extends Component {
   render() {
-    console.log(this.props)
     return (
       <div className="home-page">
         <Hero color={`primary`}>

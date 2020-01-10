@@ -18,6 +18,10 @@
   }
   &.primary {
     padding-top: 160px;
-    background-image: linear-gradient(color(primary), color(primary2));
+    background-image: linear-gradient(
+      color(primary),
+      color(primary),
+      color(primary2)
+    );
   }
 }

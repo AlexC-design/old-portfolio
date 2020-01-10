@@ -4,7 +4,12 @@ $colors: (
   primary-dark: #0f1f38,
   secondary: #6fdcff,
   accent: #ffb800,
-  dark-gray: #494949
+  dark-gray: #494949,
+  tracker-green: #008b0e,
+  primal-red: #a60000,
+  cluster-purple: #3d2242,
+  folio-blue: #365383,
+  project-dark: #161616
 );
 
 @function color($color-name) {

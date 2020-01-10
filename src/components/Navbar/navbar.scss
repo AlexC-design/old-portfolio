@@ -8,8 +8,12 @@
     list-style-type: none;
     color: white;
 
+    padding: 20px 40px;
+
+    border-radius: 10px;
+
     position: fixed;
-    top: 40px;
+    top: 30px;
     width: 600px;
 
     display: flex;
@@ -18,6 +22,10 @@
     align-items: flex-end;
 
     z-index: 10;
+
+    &.primary {
+      background-color: mix(color(primary), rgba(0, 0, 0, 0), 50%);
+    }
 
     .navbar-link {
       text-decoration: none;
