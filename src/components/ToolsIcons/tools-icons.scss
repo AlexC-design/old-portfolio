@@ -1,4 +1,6 @@
 .tools-icons-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
+  animation: fade-in 1s ease-out forwards;
 }

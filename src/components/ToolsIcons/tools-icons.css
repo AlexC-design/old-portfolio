@@ -3,5 +3,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
+  -webkit-animation: fade-in 1s ease-out forwards;
+          animation: fade-in 1s ease-out forwards;
 }
 /*# sourceMappingURL=tools-icons.css.map */

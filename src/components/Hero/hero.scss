@@ -26,16 +26,37 @@
       color(primary),
       color(primary2)
     );
+
+    animation: contract-hero 1s ease-out forwards;
+
+    @keyframes contract-hero {
+      from {
+        height: 700px;
+      }
+      to {
+        height: 500px;
+      }
+    }
   }
 
   &.about {
-    height: 700px;
     padding-top: 160px;
     background-image: linear-gradient(
       color(primary),
       color(primary),
       color(primary2)
     );
+
+    animation: expand-hero 1s ease-out forwards;
+
+    @keyframes expand-hero {
+      from {
+        height: 500px;
+      }
+      to {
+        height: 700px;
+      }
+    }
 
     .hero-content {
       flex-direction: row-reverse;

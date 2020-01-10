@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACrB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;CACtC",
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACrB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EAErC,SAAS,EAAE,4BAA4B;CACxC",
     "sources": [
         "tools-icons.scss"
     ],
