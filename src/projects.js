@@ -38,7 +38,9 @@ const projects = [
     description:
       "Building a personal portfolio website using React to showcase some of my coding and design projects",
     software: ["REACT", "REACT-ROUTER", "HTML/CSS", "JAVASCRIPT"],
-    secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
+    secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
+    liveLink: "",
+    codeLink: "https://github.com/AlexC-design/portfolio-website"
   },
   {
     name: "tracker",
@@ -57,7 +59,9 @@ const projects = [
       "HTML/CSS",
       "JAVASCRIPT"
     ],
-    secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
+    secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
+    liveLink: "https://alexc-design.github.io/bug-tracker/",
+    codeLink: "https://github.com/AlexC-design/bug-tracker"
   },
 
   {
@@ -68,7 +72,9 @@ const projects = [
     text: "Fitness Gym Landing Page",
     description: "Building a fitness gym Landing Page using React.",
     software: ["REACT", "HTML/CSS", "JAVASCRIPT"],
-    secondarySoftware: ["Figma", "Photoshop", "Illustrator"]
+    secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
+    liveLink: "https://alexc-design.github.io/primal-gym/",
+    codeLink: "https://github.com/AlexC-design/primal-gym"
   }
 ];
 
