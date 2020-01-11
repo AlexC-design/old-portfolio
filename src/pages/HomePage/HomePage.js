@@ -8,7 +8,6 @@ import { ToolsIcons } from "../../components/ToolsIcons/ToolsIcons";
 
 export default class HomePage extends Component {
   render() {
-    console.log("HOMEPAGE RERENDERED");
     return (
       <div className="home-page">
         <Hero page={`home`}>

@@ -4,6 +4,12 @@ import { Link, withRouter } from "react-router-dom";
 import "./navbar.css";
 
 class Navbar extends Component {
+  componentDidMount() {
+    this.props.history.listen((location, action) => {
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100);
+    });
+  }
+
   pathCheck = path =>
     this.props.location.pathname === path ? "active" : "inactive";
 
@@ -14,7 +20,7 @@ class Navbar extends Component {
     ) {
       return "primary";
     } else {
-      return this.props.location.pathname.replace("/", "");
+      return this.props.location.pathname.replace("/project/", "");
     }
   };
 
@@ -43,6 +49,4 @@ class Navbar extends Component {
   }
 }
 
-const wrappedComponent = withRouter(Navbar);
-
-export default wrappedComponent;
+export default withRouter(Navbar);

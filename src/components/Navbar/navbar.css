@@ -35,6 +35,22 @@
   background-color: rgba(26, 44, 73, 0.8);
 }
 
+.navbar-container .navbar.cluster {
+  background-color: rgba(61, 34, 66, 0.8);
+}
+
+.navbar-container .navbar.tracker {
+  background-color: rgba(22, 22, 22, 0.8);
+}
+
+.navbar-container .navbar.primal {
+  background-color: rgba(22, 22, 22, 0.8);
+}
+
+.navbar-container .navbar.folio {
+  background-color: rgba(26, 44, 73, 0.8);
+}
+
 .navbar-container .navbar .navbar-link {
   text-decoration: none;
   color: white;

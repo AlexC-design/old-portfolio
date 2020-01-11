@@ -27,6 +27,12 @@
       background-color: mix(color(primary), rgba(0, 0, 0, 0), 80%);
     }
 
+    @each $project, $color in $projects {
+      &.#{$project} {
+        background-color: mix(color(#{$color}), rgba(0, 0, 0, 0), 80%);
+      }
+    }
+
     .navbar-link {
       text-decoration: none;
       color: white;

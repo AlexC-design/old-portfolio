@@ -17,8 +17,6 @@ export default function ProjectsSection(props) {
     }
   };
 
-  console.log(currentView);
-
   return (
     <div className="projects-section">
       <ProjectButtons>

@@ -7,7 +7,6 @@ import "./project-page.css";
 
 export default class ProjectPage extends Component {
   render() {
-    console.log(this.props);
     return (
       <div className="project-page">
         <Hero page={`${this.props.match.params.id}`}>
