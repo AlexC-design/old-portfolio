@@ -1,5 +1,27 @@
+@import "../../../scss/variables.scss";
+
 .other-tools-section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 1800px;
+
+  margin-bottom: 100px;
+
+  .other-tools-names {
+    color: white;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    * {
+      background-color: color(primary2);
+      border-radius: 5px;
+      padding: 20px 80px;
+      margin: 10px 20px;
+    }
+  }
 }

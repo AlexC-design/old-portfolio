@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACnB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,MAAM;CACxB",
+    "mappings": "AAEA,AAAA,oBAAoB,CAAC;EACnB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,MAAM;EAEb,aAAa,EAAE,KAAK;CAgBrB;;AAxBD,AAUE,oBAVkB,CAUlB,kBAAkB,CAAC;EACjB,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,IAAI;EAEjB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;CAQtC;;AAvBH,AAiBI,oBAjBgB,CAUlB,kBAAkB,CAOhB,CAAC,CAAC;EACA,gBAAgB,EClBV,OAAO;EDmBb,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,SAAS;EAClB,MAAM,EAAE,SAAS;CAClB",
     "sources": [
-        "other-tools.scss"
+        "other-tools.scss",
+        "../../../scss/variables.scss"
     ],
     "names": [],
     "file": "other-tools.css"

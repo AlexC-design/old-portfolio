@@ -33,17 +33,4 @@
 .about-page .tech-section h2 {
   margin: 50px 0;
 }
-
-.about-page .tech-section .other-tools-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 /*# sourceMappingURL=about-page.css.map */

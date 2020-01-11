@@ -6,8 +6,30 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 1800px;
+  margin-bottom: 100px;
+}
+
+.other-tools-section .other-tools-names {
+  color: white;
+  font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.other-tools-section .other-tools-names * {
+  background-color: #133367;
+  border-radius: 5px;
+  padding: 20px 80px;
+  margin: 10px 20px;
 }
 /*# sourceMappingURL=other-tools.css.map */
