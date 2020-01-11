@@ -1,6 +1,23 @@
 .projects-display {
   margin: 50px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 1800px;
+
+  a {
+    text-decoration: none;
+  }
+
+  &.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1800px;
+  }
+
+  &.slider {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+
+    a{
+      width: 900px
+    }
+  }
 }

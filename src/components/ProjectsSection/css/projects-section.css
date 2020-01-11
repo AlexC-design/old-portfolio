@@ -14,4 +14,8 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.projects-section.slider {
+  margin: 50px auto;
+}
 /*# sourceMappingURL=projects-section.css.map */

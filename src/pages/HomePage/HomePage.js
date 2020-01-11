@@ -15,7 +15,7 @@ export default class HomePage extends Component {
           <ToolsIcons color={`yellow`} />
         </Hero>
 
-        <ProjectsSection projects={projects} />
+        <ProjectsSection projects={projects} layout={`grid`} />
       </div>
     );
   }
