@@ -15,3 +15,10 @@ $colors: (
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
+
+$projects: (
+  cluster: cluster-purple,
+  tracker: project-dark,
+  primal: project-dark,
+  folio: primary
+);

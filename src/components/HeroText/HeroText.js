@@ -1,9 +1,10 @@
 import React from "react";
 import { renderText } from "./renderText";
+import projects from "../../projects";
 
 import "./hero-text.css";
 
-export const HeroText = ({ layout }) => {
+export const HeroText = ({ layout, projectName }) => {
   switch (layout) {
     case "personal-details":
       return (
@@ -24,8 +25,14 @@ export const HeroText = ({ layout }) => {
     case "project-details":
       return (
         <div className={`hero-text ${layout}`}>
-          <h1>Project Title</h1>
-          <p>Project Description</p>
+          <h1>
+            {projects.map(project => {
+              if (project.name === projectName) return project.title;
+            })}
+          </h1>
+          <p>{projects.map(project => {
+              if (project.name === projectName) return project.desciption;
+            })}</p>
         </div>
       );
     default:

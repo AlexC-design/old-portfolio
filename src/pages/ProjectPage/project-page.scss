@@ -1,0 +1,15 @@
+.project-page {
+  .placeholder-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .placeholder-content {
+      background-color: #c4c4c4;
+      width: 1800px;
+      height: 150vh;
+      margin: 50px 0;
+    }
+  }
+}

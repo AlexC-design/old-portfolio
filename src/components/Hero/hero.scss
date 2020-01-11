@@ -62,4 +62,15 @@
       flex-direction: row-reverse;
     }
   }
+
+  @each $project, $color in $projects {
+    &.#{$project} {
+      padding-top: 160px;
+      background-image: linear-gradient(
+        color(#{$color}),
+        color(#{$color}),
+        lighten(color(#{$color}), 5%)
+      );
+    }
+  }
 }
