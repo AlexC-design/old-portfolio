@@ -6,7 +6,7 @@ export const buttonIcon = icon => {
     case "live":
       return <div className="live-icon" />;
     case "github":
-      return <img src={gitHubIcon} alt="github icon" />;
+      return <img className="github-icon" src={gitHubIcon} alt="github icon" />;
     default:
       return <p>no icon found for {icon || "_"}</p>;
   }

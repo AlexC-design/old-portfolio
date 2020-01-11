@@ -17,6 +17,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   -webkit-animation: fade-in 1s ease-out forwards;
           animation: fade-in 1s ease-out forwards;
 }
@@ -26,12 +27,51 @@
 }
 
 .main-button .live-icon {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 10px;
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  background-color: green;
-  -webkit-box-shadow: 0 0 10px 2px green;
-          box-shadow: 0 0 10px 2px green;
+  background-color: lime;
+  -webkit-box-shadow: 0 0 5px 1px lime;
+          box-shadow: 0 0 5px 1px lime;
+  -webkit-animation: pulse 2s ease-in-out infinite;
+          animation: pulse 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-box-shadow: 0 0 5px 1px lime;
+            box-shadow: 0 0 5px 1px lime;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 15px 4px lime;
+            box-shadow: 0 0 15px 4px lime;
+  }
+  to {
+    -webkit-box-shadow: 0 0 5px 1px lime;
+            box-shadow: 0 0 5px 1px lime;
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-box-shadow: 0 0 5px 1px lime;
+            box-shadow: 0 0 5px 1px lime;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 15px 4px lime;
+            box-shadow: 0 0 15px 4px lime;
+  }
+  to {
+    -webkit-box-shadow: 0 0 5px 1px lime;
+            box-shadow: 0 0 5px 1px lime;
+  }
+}
+
+.main-button .github-icon {
+  margin-left: 20px;
 }
 
 .main-button.primary {
@@ -64,5 +104,13 @@
   background-color: #494949;
   border: 0;
   color: white;
+}
+
+.main-button.dark.selected:hover {
+  background-color: #303030;
+}
+
+.main-button.dark.selected:active {
+  background-color: #161616;
 }
 /*# sourceMappingURL=main-button.css.map */

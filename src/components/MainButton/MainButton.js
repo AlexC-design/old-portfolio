@@ -5,6 +5,7 @@ import { buttonIcon } from "./buttonIcon";
 import "./main-button.css";
 
 export const MainButton = ({ text, color, icon, filled, clickEvent, link }) => {
+  console.log(link);
   return (
     <button
       onClick={link ? () => clickEvent(link) : () => clickEvent(text)}

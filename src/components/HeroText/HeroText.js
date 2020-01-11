@@ -26,13 +26,15 @@ export const HeroText = ({ layout, projectName }) => {
       return (
         <div className={`hero-text ${layout}`}>
           <h1>
-            {projects.map(project => {
-              if (project.name === projectName) return project.title;
-            })}
+            {projects
+              .filter(project => project.name === projectName)
+              .map(project => project.title)}
           </h1>
-          <p>{projects.map(project => {
-              if (project.name === projectName) return project.desciption;
-            })}</p>
+          <p>
+            {projects
+              .filter(project => project.name === projectName)
+              .map(project => project.description)}
+          </p>
         </div>
       );
     default:

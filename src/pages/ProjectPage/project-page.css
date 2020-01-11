@@ -1,4 +1,4 @@
-.project-page .placeholder-section-container {
+.project-page .project-details-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,7 +16,7 @@
           animation: fade-in 1s ease-out;
 }
 
-.project-page .placeholder-section-container .placeholder-content {
+.project-page .project-details-container .placeholder-content {
   background-color: #c4c4c4;
   width: 1800px;
   height: 150vh;

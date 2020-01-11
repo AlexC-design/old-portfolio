@@ -1,18 +1,18 @@
 .buttons-container {
-    width: 1800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
+  width: 1800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 0;
 
-    animation: buttons-slide-in 1s ease-out forwards;
+  animation: buttons-slide-in 1s ease-out forwards;
 
-    @keyframes buttons-slide-in {
-        from {
-            width: 4000px;
-        }
-        to {
-            width: 1800px;
-        }
+  @keyframes buttons-slide-in {
+    from {
+      width: 4000px;
     }
+    to {
+      width: 1800px;
+    }
+  }
 }
