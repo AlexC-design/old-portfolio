@@ -22,13 +22,6 @@
   transition: all 0.4s ease-out;
 }
 
-.footer.contact {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
 .footer .text-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,11 +50,64 @@
   padding-right: 50px;
 }
 
-.footer.contracted .phone-icon {
-  display: none;
+.footer.contact {
+  padding: 200px 100px 100px 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.footer.contracted .mail-icon {
-  display: none;
+.footer.contact .text-container {
+  height: 200px;
+}
+
+.footer.contact .text-container .name {
+  font-size: 2em;
+}
+
+.footer.contact .text-container .phone-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer.contact .text-container .email-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer.contact .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 100px;
+}
+
+.footer.contact .icons-container img {
+  height: 70px;
+  padding-bottom: 40px;
 }
 /*# sourceMappingURL=footer.css.map */

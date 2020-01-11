@@ -1,0 +1,61 @@
+.phone-icon-container {
+  width: 100px;
+  height: 70px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  animation: wiggle 2s ease-in-out infinite;
+
+  @keyframes wiggle {
+    from {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+  }
+
+  .phone-icon {
+    transform: scale(0.8);
+  }
+
+  .phone-sound-right {
+    animation: dispatch-right 1s ease-out infinite;
+
+    transform-origin: left;
+
+    @keyframes dispatch-right {
+      from {
+        transform: scale(0) translateX(0);
+        opacity: 1;
+      }
+      to {
+        transform: scale(1) translateX(10px);
+        opacity: 0;
+      }
+    }
+  }
+
+  .phone-sound-left {
+    animation: dispatch-left 1s ease-out infinite;
+
+    transform-origin: right;
+
+    @keyframes dispatch-left {
+      from {
+        transform: scale(0) translateX(0);
+        opacity: 1;
+      }
+      to {
+        transform: scale(1) translateX(-10px);
+        opacity: 0;
+      }
+    }
+  }
+}

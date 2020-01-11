@@ -1,0 +1,121 @@
+.phone-icon-container {
+  width: 100px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: wiggle 2s ease-in-out infinite;
+          animation: wiggle 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes wiggle {
+  from {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+@keyframes wiggle {
+  from {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+.phone-icon-container .phone-icon {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.phone-icon-container .phone-sound-right {
+  -webkit-animation: dispatch-right 1s ease-out infinite;
+          animation: dispatch-right 1s ease-out infinite;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+@-webkit-keyframes dispatch-right {
+  from {
+    -webkit-transform: scale(0) translateX(0);
+            transform: scale(0) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1) translateX(10px);
+            transform: scale(1) translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes dispatch-right {
+  from {
+    -webkit-transform: scale(0) translateX(0);
+            transform: scale(0) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1) translateX(10px);
+            transform: scale(1) translateX(10px);
+    opacity: 0;
+  }
+}
+
+.phone-icon-container .phone-sound-left {
+  -webkit-animation: dispatch-left 1s ease-out infinite;
+          animation: dispatch-left 1s ease-out infinite;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+@-webkit-keyframes dispatch-left {
+  from {
+    -webkit-transform: scale(0) translateX(0);
+            transform: scale(0) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1) translateX(-10px);
+            transform: scale(1) translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes dispatch-left {
+  from {
+    -webkit-transform: scale(0) translateX(0);
+            transform: scale(0) translateX(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1) translateX(-10px);
+            transform: scale(1) translateX(-10px);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=phone-icon.css.map */

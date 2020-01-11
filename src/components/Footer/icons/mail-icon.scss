@@ -1,0 +1,67 @@
+.mail-icon-container {
+  width: 100px;
+  height: 70px;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  transform: scale(0.8);
+
+  .mail-box-container {
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mail-handle-container {
+    position: absolute;
+    left: 40px;
+    top: -3px;
+
+    animation: open-mail 3s ease-in-out infinite;
+
+    @keyframes open-mail {
+      from {
+        transform: rotate(0);
+      }
+      6% {
+        transform: rotate(100deg);
+      }
+      12% {
+        transform: rotate(60deg);
+      }
+      15% {
+        transform: rotate(95deg);
+      }
+      18% {
+        transform: rotate(75deg);
+      }
+      21% {
+        transform: rotate(90deg);
+      }
+      39% {
+        transform: rotate(90deg);
+      }
+      45% {
+        transform: rotate(-20deg);
+      }
+      48% {
+        transform: rotate(15deg);
+      }
+      51% {
+        transform: rotate(-5deg);
+      }
+      54% {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(0);
+      }
+    }
+  }
+}

@@ -16,13 +16,6 @@
 
   transition: all 0.4s ease-out;
 
-  &.contact {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-  }
-
   .text-container {
     display: flex;
     flex-direction: column;
@@ -39,12 +32,44 @@
     }
   }
 
-  &.contracted {
-    .phone-icon {
-      display: none;
+  &.contact {
+    padding: 200px 100px 100px 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    justify-content: space-evenly;
+
+    .text-container {
+      height: 200px;
+
+      .name {
+        font-size: 2em;
+      }
+
+      .phone-number {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .email-address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
     }
-    .mail-icon {
-      display: none;
+
+    .icons-container {
+      display: flex;
+      flex-direction: column;
+      padding-right: 100px;
+
+      img {
+        height: 70px;
+        padding-bottom: 40px;
+      }
     }
   }
 }
