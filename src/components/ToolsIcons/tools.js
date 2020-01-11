@@ -1,6 +1,6 @@
 import html from "../../assets/icons/software/html.svg";
 import css from "../../assets/icons/software/css.svg";
-import javascript from "../../assets/icons/software/javascript.svg";
+import js from "../../assets/icons/software/js.svg";
 import react from "../../assets/icons/software/react.svg";
 import redux from "../../assets/icons/software/redux.svg";
 import ps from "../../assets/icons/software/ps.svg";
@@ -12,7 +12,7 @@ import ae from "../../assets/icons/software/ae.svg";
 export const tools = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
-  { name: "JavaScript", icon: javascript },
+  { name: "JavaScript", icon: js },
   { name: "React", icon: react },
   { name: "Redux", icon: redux },
   { name: "Adobe Photoshop", icon: ps },

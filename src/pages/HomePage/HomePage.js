@@ -13,7 +13,7 @@ export default class HomePage extends Component {
       <div className="home-page">
         <Hero page={`home`}>
           <HeroText layout={`personal-details`} />
-          <ToolsIcons />
+          <ToolsIcons color={`yellow`} />
         </Hero>
 
         <ProjectsSection projects={projects} />

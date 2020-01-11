@@ -19,7 +19,7 @@ export default class AboutPage extends Component {
         <div className="tech-section">
           <h1>Tools and Technologies</h1>
           <h2>Main</h2>
-          <ToolsIcons />
+          <ToolsIcons color={"blue"} />
           <div className="other-tools-section">
             <OtherTools title="Design" tools={designTools} />
             <OtherTools title="Code" tools={codeTools} />
