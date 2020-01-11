@@ -10,7 +10,7 @@ export const HeroText = ({ layout, projectName }) => {
       return (
         <div className={`hero-text ${layout}`}>
           <h1>Alexandru Ciobotaru</h1>
-          <h2>Web Developer</h2>
+          <h2>Web Developer / Designer</h2>
           {renderText(`home`)}
         </div>
       );
@@ -18,7 +18,7 @@ export const HeroText = ({ layout, projectName }) => {
       return (
         <div className={`hero-text ${layout}`}>
           <h1>Alexandru Ciobotaru</h1>
-          <h2>Web Developer</h2>
+          <h2>Web Developer / Designer</h2>
           {renderText(`about`)}
         </div>
       );

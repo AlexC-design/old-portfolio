@@ -24,10 +24,6 @@ export const renderText = page => {
             Design.
           </p>
           <p>
-            I am originally from Romania, but currently looking for work
-            opportunities in London.
-          </p>
-          <p>
             I have been working as a freelance concept artist and illustrator in
             the video game industry for the past 4+ years and I am now looking
             to switch carreers to Web Development.
