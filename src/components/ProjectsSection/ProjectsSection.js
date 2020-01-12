@@ -5,8 +5,9 @@ import ProjectCard from "../ProjectsSection/ProjectCard/ProjectCard";
 
 import "./css/projects-section.css";
 import { MainButton } from "../MainButton/MainButton";
+import { withRouter } from "react-router-dom";
 
-export default function ProjectsSection({ projects, layout }) {
+const ProjectsSection = ({ projects, layout, match }) => {
   const [currentView, setCurrentView] = useState("Websites");
   const [cardWidth, setCardWidth] = useState(0);
 
@@ -32,6 +33,7 @@ export default function ProjectsSection({ projects, layout }) {
         document.querySelector(".project-card-container").offsetWidth
       );
     }
+    console.log(match);
   }, [sectionStyle]);
 
   useEffect(() => {
@@ -62,11 +64,17 @@ export default function ProjectsSection({ projects, layout }) {
       <ProjectsDisplay layout={layout}>
         <div className="projects-container">
           {/* style={{ left: `-${perc}px` }} */}
-          {projects.map(project => (
-            <ProjectCard project={project} key={project.name} />
-          ))}
+          {projects.map(project => {
+            return (
+              !(layout === "slider" && project.name === match.params.id) && (
+                <ProjectCard project={project} key={project.name} />
+              )
+            );
+          })}
         </div>
       </ProjectsDisplay>
     </div>
   );
-}
+};
+
+export default withRouter(ProjectsSection);
