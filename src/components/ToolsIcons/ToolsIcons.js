@@ -8,7 +8,12 @@ export const ToolsIcons = ({ color }) => {
   return (
     <div className="tools-icons-container">
       {tools.map(tool => (
-        <ToolIcon icon={tool.icon} name={tool.name} color={color} />
+        <ToolIcon
+          icon={tool.icon}
+          name={tool.name}
+          color={color}
+          key={tool.name}
+        />
       ))}
     </div>
   );

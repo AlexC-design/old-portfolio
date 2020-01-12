@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./projects-display.css";
 
-export const ProjectsDisplay = props => {
+export const ProjectsDisplay = ({ children, layout }) => {
+  const [cardHeight, setCardHeight] = useState(633);
+
+  const displayStyle = {
+    height: cardHeight
+  };
+
+  if (layout === "slider") {
+    displayStyle.height = cardHeight;
+  } else {
+    displayStyle.height = "unset";
+  }
+
+  useEffect(() => {
+    if (layout === "slider") {
+      setCardHeight(
+        document.querySelector(".project-card-container").offsetHeight
+      );
+    }
+  });
+
   return (
-    <div className={`projects-display ${props.layout}`}>{props.children}</div>
+    <div className={`projects-display ${layout}`} style={displayStyle}>
+      {children}
+    </div>
   );
 };

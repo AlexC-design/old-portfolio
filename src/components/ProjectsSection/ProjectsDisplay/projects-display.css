@@ -1,12 +1,14 @@
 .projects-display {
-  margin: 50px 0;
+  margin: 50px auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .projects-display a {
   text-decoration: none;
 }
 
-.projects-display.grid {
+.projects-display.grid .projects-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -15,6 +17,12 @@
 }
 
 .projects-display.slider {
+  position: relative;
+  width: 50vw;
+}
+
+.projects-display.slider .projects-container {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

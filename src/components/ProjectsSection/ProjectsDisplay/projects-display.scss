@@ -1,23 +1,35 @@
 .projects-display {
-  margin: 50px 0;
+  margin: 50px auto;
+  align-self: flex-start;
 
   a {
     text-decoration: none;
   }
 
   &.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1800px;
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 1800px;
+    }
   }
 
   &.slider {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
+    position: relative;
+    width: 50vw;
 
-    a{
-      width: 900px
+    .projects-container {
+      position: absolute;
+
+      display: flex;
+      flex-direction: row;
+      align-self: flex-start;
+
+      // transition: all 1s ease-out;
+    }
+
+    a {
+      width: 900px;
     }
   }
 }

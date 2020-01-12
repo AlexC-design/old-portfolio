@@ -10,12 +10,15 @@ export default function ProjectsSection({ projects, layout }) {
   const [currentView, setCurrentView] = useState("Websites");
   const [cardWidth, setCardWidth] = useState(0);
 
-  const style = {
+  const sectionStyle = {
     maxWidth: cardWidth
   };
-  layout === "slider"
-    ? (style.maxWidth = cardWidth)
-    : (style.maxWidth = "unset");
+
+  if (layout === "slider") {
+    sectionStyle.maxWidth = cardWidth;
+  } else {
+    sectionStyle.maxWidth = "unset";
+  }
 
   const changeCurrentView = view => {
     if (currentView !== view) {
@@ -29,10 +32,19 @@ export default function ProjectsSection({ projects, layout }) {
         document.querySelector(".project-card-container").offsetWidth
       );
     }
-  }, []);
+  }, [sectionStyle]);
+
+  useEffect(() => {
+    const el = document.querySelector(".projects-container");
+    if (layout === "slider") {
+      el.addEventListener("mousemove", e => {
+        el.style.left = `-${e.clientX}px`;
+      });
+    }
+  });
 
   return (
-    <div className={`projects-section ${layout}`} style={style}>
+    <div className={`projects-section ${layout}`} style={sectionStyle}>
       <ProjectButtons>
         <MainButton
           clickEvent={changeCurrentView}
@@ -48,9 +60,12 @@ export default function ProjectsSection({ projects, layout }) {
         />
       </ProjectButtons>
       <ProjectsDisplay layout={layout}>
-        {projects.map(project => (
-          <ProjectCard project={project} key={project.name} />
-        ))}
+        <div className="projects-container">
+          {/* style={{ left: `-${perc}px` }} */}
+          {projects.map(project => (
+            <ProjectCard project={project} key={project.name} />
+          ))}
+        </div>
       </ProjectsDisplay>
     </div>
   );
