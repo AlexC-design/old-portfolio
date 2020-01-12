@@ -6,16 +6,14 @@ import ProjectCard from "../ProjectsSection/ProjectCard/ProjectCard";
 import "./css/projects-section.css";
 import { MainButton } from "../MainButton/MainButton";
 
-export default function ProjectsSection(props) {
+export default function ProjectsSection({ projects, layout }) {
   const [currentView, setCurrentView] = useState("Websites");
   const [cardWidth, setCardWidth] = useState(0);
-
-  const { projects } = props;
 
   const style = {
     maxWidth: cardWidth
   };
-  props.layout === "slider"
+  layout === "slider"
     ? (style.maxWidth = cardWidth)
     : (style.maxWidth = "unset");
 
@@ -26,11 +24,15 @@ export default function ProjectsSection(props) {
   };
 
   useEffect(() => {
-    setCardWidth(document.querySelector(".project-card-container").offsetWidth);
+    if (layout === "slider") {
+      setCardWidth(
+        document.querySelector(".project-card-container").offsetWidth
+      );
+    }
   }, []);
 
   return (
-    <div className={`projects-section ${props.layout}`} style={style}>
+    <div className={`projects-section ${layout}`} style={style}>
       <ProjectButtons>
         <MainButton
           clickEvent={changeCurrentView}
@@ -45,7 +47,7 @@ export default function ProjectsSection(props) {
           filled={currentView === "UI / UX" ? true : false}
         />
       </ProjectButtons>
-      <ProjectsDisplay layout={props.layout}>
+      <ProjectsDisplay layout={layout}>
         {projects.map(project => (
           <ProjectCard project={project} key={project.name} />
         ))}

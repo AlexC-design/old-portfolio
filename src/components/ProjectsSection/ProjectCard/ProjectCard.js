@@ -6,30 +6,28 @@ import { HoverOverlay } from "./HoverOverlay/HoverOverlay";
 
 export default class ProjectCard extends Component {
   render() {
+    const { project } = this.props;
+
     return (
-      <Link to={`project/${this.props.project.name}`}>
-        <div className={`project-card-container ${this.props.project.name}`}>
+      <Link to={`/project/${project.name}`}>
+        <div className={`project-card-container ${project.name}`}>
           <div className="project-card-top">
             <HoverOverlay
-              projectName={this.props.project.name}
-              mainTech={this.props.project.software}
-              secondaryTech={this.props.project.secondarySoftware}
+              projectName={project.name}
+              mainTech={project.software}
+              secondaryTech={project.secondarySoftware}
             />
             <div className="logo-container">
               <img
                 className="project-logo"
-                src={this.props.project.logo}
+                src={project.logo}
                 alt="project logo"
               />
             </div>
-            <img
-              className="project-gif"
-              src={this.props.project.gif}
-              alt="project gif"
-            />
+            <img className="project-gif" src={project.gif} alt="project gif" />
           </div>
           <div className="project-card-bottom">
-            <h2>{this.props.project.text}</h2>
+            <h2>{project.text}</h2>
           </div>
         </div>
       </Link>
