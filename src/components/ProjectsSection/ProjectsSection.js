@@ -2,14 +2,17 @@ import React, { useState, useEffect } from "react";
 import ProjectButtons from "./ProjectButtons/ProjectButtons";
 import { ProjectsDisplay } from "./ProjectsDisplay/ProjectsDisplay";
 import ProjectCard from "../ProjectsSection/ProjectCard/ProjectCard";
+import projects from "../../projects";
+import projects2 from "../../projects2";
 
 import "./css/projects-section.css";
 import { MainButton } from "../MainButton/MainButton";
 import { withRouter } from "react-router-dom";
 
-const ProjectsSection = ({ projects, layout, match }) => {
+const ProjectsSection = ({ layout, match }) => {
   const [currentView, setCurrentView] = useState("Websites");
   const [cardWidth, setCardWidth] = useState(0);
+  const [currentProjects, setCurrentProjects] = useState(projects);
 
   const sectionStyle = {
     maxWidth: cardWidth
@@ -24,6 +27,9 @@ const ProjectsSection = ({ projects, layout, match }) => {
   const changeCurrentView = view => {
     if (currentView !== view) {
       setCurrentView(view);
+      view === "Websites"
+        ? setCurrentProjects(projects)
+        : setCurrentProjects(projects2);
     }
   };
 
@@ -33,7 +39,6 @@ const ProjectsSection = ({ projects, layout, match }) => {
         document.querySelector(".project-card-container").offsetWidth
       );
     }
-    console.log(match);
   }, [sectionStyle]);
 
   useEffect(() => {
@@ -63,8 +68,7 @@ const ProjectsSection = ({ projects, layout, match }) => {
       </ProjectButtons>
       <ProjectsDisplay layout={layout}>
         <div className="projects-container">
-          {/* style={{ left: `-${perc}px` }} */}
-          {projects.map(project => {
+          {currentProjects.map(project => {
             return (
               !(layout === "slider" && project.name === match.params.id) && (
                 <ProjectCard project={project} key={project.name} />

@@ -7,13 +7,13 @@ import primalGymLogo from "./assets/logos/primal-gym-logo.png";
 import portfolioLogo from "./assets/logos/portfolio-logo.png";
 // import portfolioGif from "./assets/gifs/portfolio-gif.png";
 
-const projects = [
+const projects2 = [
   {
     name: "folio",
-    title: "Personal Portfolio Website",
+    title: "Personal Portfolio Website 2",
     logo: portfolioLogo,
     gif: trackerGif,
-    text: "Personal portfolio website showcasing some of my projects",
+    text: "2 Personal portfolio website showcasing some of my projects",
     description:
       "Building a personal portfolio website using React to showcase some of my coding and design projects",
     software: ["REACT", "REACT-ROUTER", "HTML/CSS", "JAVASCRIPT"],
@@ -23,11 +23,11 @@ const projects = [
   },
   {
     name: "tracker",
-    title: "Bug Tracker",
+    title: "Bug Tracker 2",
     logo: trackerLogo,
     gif: trackerGif,
     text:
-      "Application that helps teams maintain and manage issues during product development",
+      "2 Application that helps teams maintain and manage issues during product development",
     description:
       "Creating a system that contributes to the Development of a Project by managing and maintaining a List of development related Issues.",
     software: [
@@ -44,11 +44,11 @@ const projects = [
   },
   {
     name: "cluster",
-    title: "Movie Cluster",
+    title: "Movie Cluster 2",
     logo: movieClusterLogo,
     gif: trackerGif,
     text:
-      "Movie browsing website - discover top rated movies, find out what’s trending, watch trailers and more",
+      "2 Movie browsing website - discover top rated movies, find out what’s trending, watch trailers and more",
     description:
       "Building a website using React and Redux that allows users to browse movies by name, discover latest trending movies, top rated movies and find out details about the movies.",
     software: [
@@ -66,10 +66,10 @@ const projects = [
 
   {
     name: "primal",
-    title: "Primal Gym Website",
+    title: "Primal Gym Website 2",
     logo: primalGymLogo,
     gif: trackerGif,
-    text: "Fitness Gym Landing Page",
+    text: "2 Fitness Gym Landing Page",
     description: "Building a fitness gym Landing Page using React.",
     software: ["REACT", "HTML/CSS", "JAVASCRIPT"],
     secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
@@ -78,4 +78,4 @@ const projects = [
   }
 ];
 
-export default projects;
+export default projects2;

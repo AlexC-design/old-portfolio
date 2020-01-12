@@ -3,7 +3,6 @@ import Hero from "../../components/Hero/Hero";
 import { HeroText } from "../../components/HeroText/HeroText";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 
-import projects from "../../projects";
 import { ToolsIcons } from "../../components/ToolsIcons/ToolsIcons";
 
 export default class HomePage extends Component {
@@ -15,7 +14,7 @@ export default class HomePage extends Component {
           <ToolsIcons color={`yellow`} />
         </Hero>
 
-        <ProjectsSection projects={projects} layout={`grid`} />
+        <ProjectsSection layout={`grid`} />
       </div>
     );
   }

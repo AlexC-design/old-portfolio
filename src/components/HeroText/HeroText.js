@@ -1,6 +1,7 @@
 import React from "react";
 import { renderText } from "./renderText";
 import projects from "../../projects";
+import projects2 from "../../projects2";
 
 import "./hero-text.css";
 
@@ -29,9 +30,15 @@ export const HeroText = ({ layout, projectName }) => {
             {projects
               .filter(project => project.name === projectName)
               .map(project => project.title)}
+            {projects2
+              .filter(project => project.name === projectName)
+              .map(project => project.title)}
           </h1>
           <p>
             {projects
+              .filter(project => project.name === projectName)
+              .map(project => project.description)}
+            {projects2
               .filter(project => project.name === projectName)
               .map(project => project.description)}
           </p>
