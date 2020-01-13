@@ -39,5 +39,14 @@
   a {
     font-weight: bold;
     color: color(accent);
+
+    &:hover {
+      text-shadow: 0 0 2px color(accent);
+    }
+
+    &:active {
+      color: white;
+      text-shadow: 0 0 10px white;
+    }
   }
 }

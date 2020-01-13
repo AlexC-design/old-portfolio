@@ -54,10 +54,20 @@
 .navbar-container .navbar .navbar-link {
   text-decoration: none;
   color: white;
+  font-size: 1.2em;
+}
+
+.navbar-container .navbar .navbar-link:hover {
+  text-shadow: 0 0 5px #ffb800;
+}
+
+.navbar-container .navbar .navbar-link:active {
+  color: white !important;
+  text-shadow: 0 0 10px white;
 }
 
 .navbar-container .navbar .navbar-link.active {
-  font-size: 1.1em;
   font-weight: bold;
+  color: #ffb800;
 }
 /*# sourceMappingURL=navbar.css.map */

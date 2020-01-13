@@ -53,4 +53,13 @@
   font-weight: bold;
   color: #ffb800;
 }
+
+.hero-text a:hover {
+  text-shadow: 0 0 2px #ffb800;
+}
+
+.hero-text a:active {
+  color: white;
+  text-shadow: 0 0 10px white;
+}
 /*# sourceMappingURL=hero-text.css.map */

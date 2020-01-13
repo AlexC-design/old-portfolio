@@ -28,8 +28,19 @@
     display: flex;
     flex-direction: row;
 
-    img {
+    a {
       padding-right: 50px;
+
+      img {
+        cursor: pointer;
+
+        &:hover {
+          filter: drop-shadow(0px 0px 2px color(accent));
+        }
+        &:active {
+          filter: drop-shadow(0px 0px 3.5px white);
+        }
+      }
     }
   }
 
