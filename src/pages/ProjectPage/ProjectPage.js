@@ -25,26 +25,34 @@ export default class ProjectPage extends Component {
           <HeroImage projectName={`${this.props.match.params.id}`} />
         </Hero>
         <div className="project-details-container">
-          <ProjectButtons>
-            <MainButton
-              clickEvent={this.linkTo}
-              text="LiveVersion"
-              color="dark"
-              icon="live"
-              link={projects
-                .filter(project => project.name === this.props.match.params.id)
-                .map(project => project.liveLink)}
-            />
-            <MainButton
-              clickEvent={this.linkTo}
-              text="Code"
-              color="dark"
-              icon="github"
-              link={projects
-                .filter(project => project.name === this.props.match.params.id)
-                .map(project => project.codeLink)}
-            />
-          </ProjectButtons>
+          {projects.find(
+            project => project.name === this.props.match.params.id
+          ) && (
+            <ProjectButtons>
+              <MainButton
+                clickEvent={this.linkTo}
+                text="LiveVersion"
+                color="dark"
+                icon="live"
+                link={projects
+                  .filter(
+                    project => project.name === this.props.match.params.id
+                  )
+                  .map(project => project.liveLink)}
+              />
+              <MainButton
+                clickEvent={this.linkTo}
+                text="Code"
+                color="dark"
+                icon="github"
+                link={projects
+                  .filter(
+                    project => project.name === this.props.match.params.id
+                  )
+                  .map(project => project.codeLink)}
+              />
+            </ProjectButtons>
+          )}
           <div className="placeholder-content"></div>
         </div>
         <ProjectsSection projects={projects} layout={`slider`} />

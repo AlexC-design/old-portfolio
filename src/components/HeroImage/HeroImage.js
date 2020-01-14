@@ -8,12 +8,16 @@ import "./hero-image.css";
 export const HeroImage = ({ projectName }) => {
   return (
     <div className="project-image-container">
-      <ImageSlideshow
-        project={
-          projects.find(project => project.name === projectName) ||
-          projects2.find(project => project.name === projectName)
-        }
-      />
+      {projectName ? (
+        <ImageSlideshow
+          project={
+            projects.find(project => project.name === projectName) ||
+            projects2.find(project => project.name === projectName)
+          }
+        />
+      ) : (
+        <img className="about-picture" src="" />
+      )}
     </div>
   );
 };
