@@ -38,7 +38,7 @@ export default class ImageSlideshow extends Component {
       });
     }
 
-    setTimeout(() => this.changeImage(imagesLength), 2000);
+    setTimeout(() => this.changeImage(imagesLength), 2000 + Math.floor(Math.random() * 1001));
   };
 
   render() {

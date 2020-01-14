@@ -1,54 +1,51 @@
 import trackerLogo from "./assets/logos/tracker-logo.png";
-import trackerGif from "./assets/gifs/tracker-gif.png";
 import movieClusterLogo from "./assets/logos/movie-cluster-logo.png";
-// import movieClusterGif from "./assets/gifs/movie-cluster-gif.png";
 import primalGymLogo from "./assets/logos/primal-gym-logo.png";
-// import primalGymGif from "./assets/gifs/primal-gym-gif.png";
 import portfolioLogo from "./assets/logos/portfolio-logo.png";
-// import portfolioGif from "./assets/gifs/portfolio-gif.png";
 
-const projects2 = [
-  {
-    name: "folio",
-    title: "Personal Portfolio Website 2",
-    logo: portfolioLogo,
-    gif: trackerGif,
-    text: "2 Personal portfolio website showcasing some of my projects",
-    description:
-      "Building a personal portfolio website using React to showcase some of my coding and design projects",
-    software: ["REACT", "REACT-ROUTER", "HTML/CSS", "JAVASCRIPT"],
-    secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
-    liveLink: "",
-    codeLink: "https://github.com/AlexC-design/portfolio-website"
-  },
-  {
-    name: "tracker",
-    title: "Bug Tracker 2",
-    logo: trackerLogo,
-    gif: trackerGif,
-    text:
-      "2 Application that helps teams maintain and manage issues during product development",
-    description:
-      "Creating a system that contributes to the Development of a Project by managing and maintaining a List of development related Issues.",
-    software: [
-      "REACT",
-      "REDUX",
-      "REDUX-SAGA",
-      "REACT-ROUTER",
-      "HTML/CSS",
-      "JAVASCRIPT"
-    ],
-    secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
-    liveLink: "https://alexc-design.github.io/bug-tracker/",
-    codeLink: "https://github.com/AlexC-design/bug-tracker"
-  },
+import clusterSlide1 from "./assets/slideshow/cluster/mc1.png";
+import clusterSlide2 from "./assets/slideshow/cluster/mc2.png";
+import clusterSlide3 from "./assets/slideshow/cluster/mc3.png";
+import clusterSlide4 from "./assets/slideshow/cluster/mc4.png";
+
+import trackerSlide1 from "./assets/slideshow/tracker/tr1.png";
+import trackerSlide2 from "./assets/slideshow/tracker/tr2.png";
+import trackerSlide3 from "./assets/slideshow/tracker/tr3.png";
+import trackerSlide4 from "./assets/slideshow/tracker/tr4.png";
+
+import folioSlide1 from "./assets/slideshow/folio/fo1.png";
+import folioSlide2 from "./assets/slideshow/folio/fo2.png";
+import folioSlide3 from "./assets/slideshow/folio/fo3.png";
+import folioSlide4 from "./assets/slideshow/folio/fo4.png";
+
+import primalSlide1 from "./assets/slideshow/primal/pg1.png";
+import primalSlide2 from "./assets/slideshow/primal/pg2.png";
+import primalSlide3 from "./assets/slideshow/primal/pg3.png";
+import primalSlide4 from "./assets/slideshow/primal/pg4.png";
+
+const clusterSlider = [
+  clusterSlide1,
+  clusterSlide2,
+  clusterSlide3,
+  clusterSlide4
+];
+const trackerSlider = [
+  trackerSlide1,
+  trackerSlide2,
+  trackerSlide3,
+  trackerSlide4
+];
+const folioSlider = [folioSlide1, folioSlide2, folioSlide3, folioSlide4];
+const primalSlider = [primalSlide1, primalSlide2, primalSlide3, primalSlide4];
+
+const projects = [
   {
     name: "cluster",
-    title: "Movie Cluster 2",
+    title: "Movie Cluster",
     logo: movieClusterLogo,
-    gif: trackerGif,
+    sliderImages: clusterSlider,
     text:
-      "2 Movie browsing website - discover top rated movies, find out what’s trending, watch trailers and more",
+      "Movie browsing website - discover top rated movies, find out what’s trending, watch trailers and more",
     description:
       "Building a website using React and Redux that allows users to browse movies by name, discover latest trending movies, top rated movies and find out details about the movies.",
     software: [
@@ -63,13 +60,47 @@ const projects2 = [
     liveLink: "https://alexc-design.github.io/movie-cluster",
     codeLink: "https://github.com/AlexC-design/movie-cluster"
   },
+  {
+    name: "folio",
+    title: "Personal Portfolio Website",
+    logo: portfolioLogo,
+    sliderImages: folioSlider,
+    text: "Personal portfolio website showcasing some of my projects",
+    description:
+      "Building a personal portfolio website using React to showcase some of my coding and design projects",
+    software: ["REACT", "REACT-ROUTER", "HTML/CSS", "JAVASCRIPT"],
+    secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
+    liveLink: "",
+    codeLink: "https://github.com/AlexC-design/portfolio-website"
+  },
+  {
+    name: "tracker",
+    title: "Bug Tracker",
+    logo: trackerLogo,
+    sliderImages: trackerSlider,
+    text:
+      "Application that helps teams maintain and manage issues during product development",
+    description:
+      "Creating a system that contributes to the Development of a Project by managing and maintaining a List of development related Issues.",
+    software: [
+      "REACT",
+      "REDUX",
+      "REDUX-SAGA",
+      "REACT-ROUTER",
+      "HTML/CSS",
+      "JAVASCRIPT"
+    ],
+    secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
+    liveLink: "https://alexc-design.github.io/bug-tracker/",
+    codeLink: "https://github.com/AlexC-design/bug-tracker"
+  },
 
   {
     name: "primal",
-    title: "Primal Gym Website 2",
+    title: "Primal Gym Website",
     logo: primalGymLogo,
-    gif: trackerGif,
-    text: "2 Fitness Gym Landing Page",
+    sliderImages: primalSlider,
+    text: "Fitness Gym Landing Page",
     description: "Building a fitness gym Landing Page using React.",
     software: ["REACT", "HTML/CSS", "JAVASCRIPT"],
     secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
@@ -78,4 +109,4 @@ const projects2 = [
   }
 ];
 
-export default projects2;
+export default projects;

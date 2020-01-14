@@ -24,7 +24,7 @@ export const ProjectsDisplay = ({ children, layout }) => {
       }
     };
 
-    setTimeout(setHeigth, 0);
+    setTimeout(setHeigth, 100);
   });
 
   return (
