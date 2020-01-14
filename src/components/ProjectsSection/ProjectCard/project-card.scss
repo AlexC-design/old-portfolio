@@ -28,6 +28,8 @@
     justify-content: center;
     box-sizing: border-box;
 
+    background-color: color(project-dark);
+
     border-radius: 10px 10px 0 0;
     border: 10px solid;
 
@@ -69,7 +71,6 @@
 
   &.tracker {
     .project-card-top {
-      background-color: color(project-dark);
       border-color: color(tracker-green);
     }
 
@@ -79,7 +80,6 @@
   }
   &.primal {
     .project-card-top {
-      background-color: color(project-dark);
       border-color: color(primal-red);
     }
 
@@ -89,7 +89,6 @@
   }
   &.folio {
     .project-card-top {
-      background-color: color(project-dark);
       border-color: color(folio-blue);
     }
 
@@ -99,12 +98,38 @@
   }
   &.cluster {
     .project-card-top {
-      background-color: color(project-dark);
       border-color: color(cluster-purple);
     }
 
     .project-card-bottom {
       background-color: color(cluster-purple);
+    }
+  }
+  &.tas {
+    .project-card-top {
+      border-color: color(tas-blue);
+    }
+
+    .project-card-bottom {
+      background-color: color(tas-blue);
+    }
+  }
+  &.loaa {
+    .project-card-top {
+      border-color: color(loa-dark);
+    }
+
+    .project-card-bottom {
+      background-color: color(loa-dark);
+    }
+  }
+  &.loaw {
+    .project-card-top {
+      border-color: color(loa-dark);
+    }
+
+    .project-card-bottom {
+      background-color: color(loa-dark);
     }
   }
 }

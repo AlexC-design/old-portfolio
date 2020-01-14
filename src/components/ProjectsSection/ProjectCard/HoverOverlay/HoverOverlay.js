@@ -14,11 +14,12 @@ export const HoverOverlay = ({ mainTech, secondaryTech, projectName }) => {
         ))}
       </div>
       <div className="tech-section">
-        {secondaryTech.map(name => (
-          <div key={name} className="tech-tab">
-            {name}
-          </div>
-        ))}
+        {secondaryTech &&
+          secondaryTech.map(name => (
+            <div key={name} className="tech-tab">
+              {name}
+            </div>
+          ))}
       </div>
     </div>
   );

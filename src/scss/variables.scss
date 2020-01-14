@@ -9,6 +9,8 @@ $colors: (
   primal-red: #a60000,
   cluster-purple: #3d2242,
   folio-blue: #365383,
+  loa-dark: #272324,
+  tas-blue: #454b66,
   project-dark: #161616
 );
 
@@ -20,5 +22,9 @@ $projects: (
   cluster: cluster-purple,
   tracker: project-dark,
   primal: project-dark,
+  tas: tas-blue,
+  loa: loa-dark,
   folio: primary
+  loaa: loa-dark,
+  loaw: loa-dark,
 );

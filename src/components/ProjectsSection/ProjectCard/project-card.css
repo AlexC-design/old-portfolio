@@ -44,6 +44,7 @@
           justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #161616;
   border-radius: 10px 10px 0 0;
   border: 10px solid;
   width: 90%;
@@ -91,7 +92,6 @@
 }
 
 .project-card-container.tracker .project-card-top {
-  background-color: #161616;
   border-color: #008b0e;
 }
 
@@ -100,7 +100,6 @@
 }
 
 .project-card-container.primal .project-card-top {
-  background-color: #161616;
   border-color: #a60000;
 }
 
@@ -109,7 +108,6 @@
 }
 
 .project-card-container.folio .project-card-top {
-  background-color: #161616;
   border-color: #365383;
 }
 
@@ -118,11 +116,34 @@
 }
 
 .project-card-container.cluster .project-card-top {
-  background-color: #161616;
   border-color: #3d2242;
 }
 
 .project-card-container.cluster .project-card-bottom {
   background-color: #3d2242;
+}
+
+.project-card-container.tas .project-card-top {
+  border-color: #454b66;
+}
+
+.project-card-container.tas .project-card-bottom {
+  background-color: #454b66;
+}
+
+.project-card-container.loaa .project-card-top {
+  border-color: #272324;
+}
+
+.project-card-container.loaa .project-card-bottom {
+  background-color: #272324;
+}
+
+.project-card-container.loaw .project-card-top {
+  border-color: #272324;
+}
+
+.project-card-container.loaw .project-card-bottom {
+  background-color: #272324;
 }
 /*# sourceMappingURL=project-card.css.map */

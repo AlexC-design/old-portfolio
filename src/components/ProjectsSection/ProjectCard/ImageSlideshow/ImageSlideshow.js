@@ -15,7 +15,7 @@ export default class ImageSlideshow extends Component {
 
   componentDidMount() {
     this.changeImage(this.props.project.sliderImages.length);
-    setTimeout(this.setSliderSizes, 100);
+    setTimeout(this.setSliderSizes, 200);
   }
 
   setSliderSizes = () => {
@@ -29,7 +29,7 @@ export default class ImageSlideshow extends Component {
   };
 
   changeImage = imagesLength => {
-    console.log(this.state)
+    
     if (this.state.currentImage === imagesLength - 1) {
       this.setState({ currentImage: 0 });
     } else {

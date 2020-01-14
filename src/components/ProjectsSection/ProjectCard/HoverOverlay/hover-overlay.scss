@@ -32,6 +32,15 @@
   &.folio {
     background-color: mix(color(folio-blue), rgba(0, 0, 0, 0.8), 50%);
   }
+  &.tas {
+    background-color: mix(color(tas-blue), rgba(0, 0, 0, 0.8), 50%);
+  }
+  &.loaa {
+    background-color: mix(color(loa-dark), rgba(0, 0, 0, 0.8), 50%);
+  }
+  &.loaw {
+    background-color: mix(color(loa-dark), rgba(0, 0, 0, 0.8), 50%);
+  }
 
   .tech-section {
     display: grid;
