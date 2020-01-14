@@ -22,7 +22,7 @@ export default class ProjectPage extends Component {
             layout={`project-details`}
             projectName={`${this.props.match.params.id}`}
           />
-          <HeroImage />
+          <HeroImage projectName={`${this.props.match.params.id}`} />
         </Hero>
         <div className="project-details-container">
           <ProjectButtons>

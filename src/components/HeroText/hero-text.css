@@ -6,7 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-right: 50px;
-  max-width: 50%;
+  min-width: 50%;
   -webkit-animation: fade-in 1s ease-out forwards;
           animation: fade-in 1s ease-out forwards;
 }
