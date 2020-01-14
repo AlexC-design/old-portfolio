@@ -19,7 +19,7 @@ const ProjectsSection = ({ layout, match }) => {
   };
 
   if (layout === "slider") {
-    sectionStyle.maxWidth = cardWidth * 1.5;
+    sectionStyle.maxWidth = cardWidth * 2;
   } else {
     sectionStyle.maxWidth = "unset";
   }
@@ -37,7 +37,7 @@ const ProjectsSection = ({ layout, match }) => {
     if (layout === "slider") {
       el.addEventListener("mousemove", e => {
         console.log(el.offsetWidth);
-        el.style.left = `-${(el.offsetWidth / window.innerWidth) *
+        el.style.left = `-${(el.offsetWidth / (2* window.innerWidth - e.clientX)) *
           e.clientX}px`;
       });
     }
