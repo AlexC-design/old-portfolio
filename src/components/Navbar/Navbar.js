@@ -5,7 +5,7 @@ import "./navbar.css";
 
 class Navbar extends Component {
   componentDidMount() {
-    this.props.history.listen((location, action) => {
+    this.props.history.listen(() => {
       setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100);
     });
   }

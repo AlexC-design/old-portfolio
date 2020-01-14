@@ -3,17 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./projects-display.css";
 
 export const ProjectsDisplay = ({ children, layout }) => {
-  const [cardHeight, setCardHeight] = useState(633);
-
-  const displayStyle = {
-    height: cardHeight
-  };
-
-  if (layout === "slider") {
-    displayStyle.height = cardHeight;
-  } else {
-    displayStyle.height = "unset";
-  }
+  const [cardHeight, setCardHeight] = useState("unset");
 
   useEffect(() => {
     const setHeigth = () => {
@@ -21,14 +11,19 @@ export const ProjectsDisplay = ({ children, layout }) => {
         setCardHeight(
           document.querySelector(".project-card-container").offsetHeight
         );
+      } else {
+        setCardHeight("unset");
       }
     };
 
-    setTimeout(setHeigth, 100);
+    setTimeout(setHeigth, 0);
   });
 
   return (
-    <div className={`projects-display ${layout}`} style={displayStyle}>
+    <div
+      className={`projects-display ${layout}`}
+      style={{ height: cardHeight }}
+    >
       {children}
     </div>
   );
