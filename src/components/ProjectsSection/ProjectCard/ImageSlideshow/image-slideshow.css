@@ -1,0 +1,15 @@
+.images-slideshow {
+  position: relative;
+}
+
+.images-slideshow .slideshow-image {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 1s 1s ease-in-out;
+  transition: opacity 1s 1s ease-in-out;
+}
+
+.images-slideshow .slideshow-image.active {
+  opacity: 1;
+}
+/*# sourceMappingURL=image-slideshow.css.map */

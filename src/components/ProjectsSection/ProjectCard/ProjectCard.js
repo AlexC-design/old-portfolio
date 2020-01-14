@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./project-card.css";
 import { HoverOverlay } from "./HoverOverlay/HoverOverlay";
+import ImageSlideshow from "./ImageSlideshow/ImageSlideshow";
 
 export default class ProjectCard extends Component {
   render() {
@@ -24,7 +25,7 @@ export default class ProjectCard extends Component {
                 alt="project logo"
               />
             </div>
-            <img className="project-gif" src={project.gif} alt="project gif" />
+            <ImageSlideshow project={project} />
           </div>
           <div className="project-card-bottom">
             <h2>{project.text}</h2>

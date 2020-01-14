@@ -24,22 +24,13 @@ const ProjectsSection = ({ layout, match }) => {
     sectionStyle.maxWidth = "unset";
   }
 
-  const changeCurrentView = view => {
-    if (currentView !== view) {
-      setCurrentView(view);
-      view === "Websites"
-        ? setCurrentProjects(projects)
-        : setCurrentProjects(projects2);
-    }
-  };
-
   useEffect(() => {
     if (layout === "slider") {
       setCardWidth(
         document.querySelector(".project-card-container").offsetWidth
       );
     }
-  }, [sectionStyle]);
+  }, [layout]);
 
   useEffect(() => {
     const el = document.querySelector(".projects-container");
@@ -49,6 +40,15 @@ const ProjectsSection = ({ layout, match }) => {
       });
     }
   });
+
+  const changeCurrentView = view => {
+    if (currentView !== view) {
+      setCurrentView(view);
+      view === "Websites"
+        ? setCurrentProjects(projects)
+        : setCurrentProjects(projects2);
+    }
+  };
 
   return (
     <div className={`projects-section ${layout}`} style={sectionStyle}>

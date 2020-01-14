@@ -8,7 +8,7 @@ export const OtherTools = ({ tools, title }) => {
       <h2>{title}</h2>
       <div className="other-tools-names">
         {tools.map(name => (
-          <h3>{name}</h3>
+          <h3 key={name}>{name}</h3>
         ))}
       </div>
     </div>

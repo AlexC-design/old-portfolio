@@ -1,5 +1,5 @@
 import trackerLogo from "./assets/logos/tracker-logo.png";
-import trackerGif from "./assets/gifs/tracker-gif.png";
+// import trackerGif from "./assets/gifs/cluster-gif.gif";
 import movieClusterLogo from "./assets/logos/movie-cluster-logo.png";
 // import movieClusterGif from "./assets/gifs/movie-cluster-gif.png";
 import primalGymLogo from "./assets/logos/primal-gym-logo.png";
@@ -7,12 +7,25 @@ import primalGymLogo from "./assets/logos/primal-gym-logo.png";
 import portfolioLogo from "./assets/logos/portfolio-logo.png";
 // import portfolioGif from "./assets/gifs/portfolio-gif.png";
 
+import clusterslide1 from "./assets/cluster/slider/mc1.png";
+import clusterslide2 from "./assets/cluster/slider/mc2.png";
+import clusterslide3 from "./assets/cluster/slider/mc3.png";
+import clusterslide4 from "./assets/cluster/slider/mc4.png";
+
+const clusterSlider = [
+  clusterslide1,
+  clusterslide2,
+  clusterslide3,
+  clusterslide4
+];
+
 const projects = [
   {
     name: "cluster",
     title: "Movie Cluster",
     logo: movieClusterLogo,
-    gif: trackerGif,
+    // gif: trackerGif,
+    sliderImages: clusterSlider,
     text:
       "Movie browsing website - discover top rated movies, find out what’s trending, watch trailers and more",
     description:
@@ -33,7 +46,8 @@ const projects = [
     name: "folio",
     title: "Personal Portfolio Website",
     logo: portfolioLogo,
-    gif: trackerGif,
+    // gif: trackerGif,
+    sliderImages: clusterSlider,
     text: "Personal portfolio website showcasing some of my projects",
     description:
       "Building a personal portfolio website using React to showcase some of my coding and design projects",
@@ -46,7 +60,8 @@ const projects = [
     name: "tracker",
     title: "Bug Tracker",
     logo: trackerLogo,
-    gif: trackerGif,
+    // gif: trackerGif,
+    sliderImages: clusterSlider,
     text:
       "Application that helps teams maintain and manage issues during product development",
     description:
@@ -68,7 +83,8 @@ const projects = [
     name: "primal",
     title: "Primal Gym Website",
     logo: primalGymLogo,
-    gif: trackerGif,
+    // gif: trackerGif,
+    sliderImages: clusterSlider,
     text: "Fitness Gym Landing Page",
     description: "Building a fitness gym Landing Page using React.",
     software: ["REACT", "HTML/CSS", "JAVASCRIPT"],

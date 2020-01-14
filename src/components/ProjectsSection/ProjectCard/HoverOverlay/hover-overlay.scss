@@ -18,6 +18,8 @@
 
   transition: opacity 0.2s ease-out;
 
+  z-index: 3;
+
   &.tracker {
     background-color: mix(color(tracker-green), rgba(0, 0, 0, 0.8), 50%);
   }

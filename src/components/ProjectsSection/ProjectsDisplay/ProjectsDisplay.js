@@ -16,11 +16,15 @@ export const ProjectsDisplay = ({ children, layout }) => {
   }
 
   useEffect(() => {
-    if (layout === "slider") {
-      setCardHeight(
-        document.querySelector(".project-card-container").offsetHeight
-      );
-    }
+    const setHeigth = () => {
+      if (layout === "slider") {
+        setCardHeight(
+          document.querySelector(".project-card-container").offsetHeight
+        );
+      }
+    };
+
+    setTimeout(setHeigth, 0);
   });
 
   return (
