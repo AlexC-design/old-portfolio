@@ -47,8 +47,24 @@
   background-color: rgba(22, 22, 22, 0.8);
 }
 
+.navbar-container .navbar.tas {
+  background-color: rgba(69, 75, 102, 0.8);
+}
+
+.navbar-container .navbar.loa {
+  background-color: rgba(39, 35, 36, 0.8);
+}
+
 .navbar-container .navbar.folio {
   background-color: rgba(26, 44, 73, 0.8);
+}
+
+.navbar-container .navbar.loaa {
+  background-color: rgba(39, 35, 36, 0.8);
+}
+
+.navbar-container .navbar.loaw {
+  background-color: rgba(39, 35, 36, 0.8);
 }
 
 .navbar-container .navbar .navbar-link {
