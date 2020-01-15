@@ -15,11 +15,4 @@
   -webkit-animation: fade-in 1s ease-out;
           animation: fade-in 1s ease-out;
 }
-
-.project-page .project-details-container .placeholder-content {
-  background-color: #c4c4c4;
-  width: 1600px;
-  height: 150vh;
-  margin: 50px 0;
-}
 /*# sourceMappingURL=project-page.css.map */

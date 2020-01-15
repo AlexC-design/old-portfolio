@@ -3,6 +3,7 @@ import Hero from "../../components/Hero/Hero";
 import { HeroImage } from "../../components/HeroImage/HeroImage";
 import { HeroText } from "../../components/HeroText/HeroText";
 import { MainButton } from "../../components/MainButton/MainButton";
+import { ProjectContent } from "../ProjectPage/ProjectContent/ProjectContent";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import ProjectButtons from "../../components/ProjectsSection/ProjectButtons/ProjectButtons";
 import projects from "../../projects";
@@ -53,7 +54,7 @@ export default class ProjectPage extends Component {
               />
             </ProjectButtons>
           )}
-          <div className="placeholder-content"></div>
+          <ProjectContent />
         </div>
         <ProjectsSection projects={projects} layout={`slider`} />
       </div>
