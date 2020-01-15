@@ -109,8 +109,8 @@
 
 .hero-container.tas {
   padding-top: 160px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#454b66), color-stop(#454b66), to(#4f5675));
-  background-image: linear-gradient(#454b66, #454b66, #4f5675);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#252e53), color-stop(#252e53), to(#2d3865));
+  background-image: linear-gradient(#252e53, #252e53, #2d3865);
 }
 
 .hero-container.loa {
