@@ -1,11 +1,9 @@
 import React from "react";
 import { renderText } from "./renderText";
-import projects from "../../projects";
-import projects2 from "../../projects2";
 
 import "./hero-text.css";
 
-export const HeroText = ({ layout, projectName }) => {
+export const HeroText = ({ layout, projectTitle, projectDescription }) => {
   switch (layout) {
     case "personal-details":
       return (
@@ -26,22 +24,8 @@ export const HeroText = ({ layout, projectName }) => {
     case "project-details":
       return (
         <div className={`hero-text ${layout}`}>
-          <h1>
-            {projects
-              .filter(project => project.name === projectName)
-              .map(project => project.title)}
-            {projects2
-              .filter(project => project.name === projectName)
-              .map(project => project.title)}
-          </h1>
-          <p>
-            {projects
-              .filter(project => project.name === projectName)
-              .map(project => project.description)}
-            {projects2
-              .filter(project => project.name === projectName)
-              .map(project => project.description)}
-          </p>
+          <h1>{projectTitle}</h1>
+          <p>{projectDescription}</p>
         </div>
       );
     default:

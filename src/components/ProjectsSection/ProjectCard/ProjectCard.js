@@ -25,7 +25,7 @@ export default class ProjectCard extends Component {
                 alt="project logo"
               />
             </div>
-            <ImageSlideshow project={project} />
+            <ImageSlideshow projectImages={project.sliderImages} />
           </div>
           <div className="project-card-bottom">
             <h2>{project.text}</h2>

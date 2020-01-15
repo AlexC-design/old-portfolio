@@ -25,7 +25,6 @@ const ProjectsSection = ({ layout, match }) => {
   }
 
   useEffect(() => {
-    console.log('LAYOUT')
     if (layout === "slider") {
       setCardWidth(
         document.querySelector(".project-card-container").offsetWidth
@@ -34,11 +33,9 @@ const ProjectsSection = ({ layout, match }) => {
   }, [layout]);
 
   useEffect(() => {
-    console.log(`UPDATE - MOUSEMOVE`)
     const el = document.querySelector(".projects-container");
     if (layout === "slider") {
       el.addEventListener("mousemove", e => {
-        
         el.style.left = `-${(el.offsetWidth /
           (2 * window.innerWidth - e.clientX)) *
           e.clientX}px`;
@@ -47,7 +44,6 @@ const ProjectsSection = ({ layout, match }) => {
   });
 
   useEffect(() => {
-    console.log('CURRENT VIEW')
     document.querySelector(".projects-container").style.left = `-${Math.min(
       window.innerWidth,
       document.querySelector(".projects-container").offsetWidth

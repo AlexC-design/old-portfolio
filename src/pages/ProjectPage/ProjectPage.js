@@ -7,56 +7,75 @@ import { ProjectContent } from "../ProjectPage/ProjectContent/ProjectContent";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import ProjectButtons from "../../components/ProjectsSection/ProjectButtons/ProjectButtons";
 import projects from "../../projects";
+import projects2 from "../../projects2";
 
 import "./project-page.css";
 
 export default class ProjectPage extends Component {
+  constructor(props) {
+    super(props);
+
+    const { id } = this.props.match.params;
+
+    this.state = {
+      currentProject:
+        projects.find(project => project.name === id) ||
+        projects2.find(project => project.name === id)
+    };
+  }
+
+  componentDidUpdate() {
+    const { id } = this.props.match.params;
+
+    if (id !== this.state.currentProject.name) {
+      this.setState({
+        currentProject:
+          projects.find(project => project.name === id) ||
+          projects2.find(project => project.name === id)
+      });
+    }
+  }
+
   linkTo = link => {
     window.open(link, "blank_");
   };
 
   render() {
+    const { id } = this.props.match.params;
+    const { currentProject } = this.state;
+
     return (
       <div className="project-page">
-        <Hero page={`${this.props.match.params.id}`}>
+        <Hero page={`${id}`}>
           <HeroText
             layout={`project-details`}
-            projectName={`${this.props.match.params.id}`}
+            projectTitle={currentProject.title}
+            projectDescription={currentProject.description}
           />
-          <HeroImage projectName={`${this.props.match.params.id}`} />
+          <HeroImage projectImages={currentProject.sliderImages} />
         </Hero>
         <div className="project-details-container">
-          {projects.find(
-            project => project.name === this.props.match.params.id
-          ) && (
+          {projects.find(project => project.name === id) && (
             <ProjectButtons>
               <MainButton
                 clickEvent={this.linkTo}
                 text="LiveVersion"
                 color="dark"
                 icon="live"
-                link={projects
-                  .filter(
-                    project => project.name === this.props.match.params.id
-                  )
-                  .map(project => project.liveLink)}
+                link={currentProject.liveLink}
               />
               <MainButton
                 clickEvent={this.linkTo}
                 text="Code"
                 color="dark"
                 icon="github"
-                link={projects
-                  .filter(
-                    project => project.name === this.props.match.params.id
-                  )
-                  .map(project => project.codeLink)}
+                link={currentProject.codeLink}
               />
             </ProjectButtons>
           )}
           <ProjectContent />
         </div>
-        <ProjectsSection projects={projects} layout={`slider`} />
+        <ProjectsSection layout={`slider`} />
       </div>
     );
   }

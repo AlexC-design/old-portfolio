@@ -5,16 +5,11 @@ import projects2 from "../../projects2";
 
 import "./hero-image.css";
 
-export const HeroImage = ({ projectName }) => {
+export const HeroImage = ({ projectImages }) => {
   return (
     <div className="project-image-container">
-      {projectName ? (
-        <ImageSlideshow
-          project={
-            projects.find(project => project.name === projectName) ||
-            projects2.find(project => project.name === projectName)
-          }
-        />
+      {projectImages ? (
+        <ImageSlideshow projectImages={projectImages} />
       ) : (
         <img className="about-picture" src="" />
       )}
