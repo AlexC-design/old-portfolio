@@ -3,4 +3,12 @@
   height: auto !important;
   margin: 0 auto !important;
 }
+
+.sirv-zoom-thumbnails li {
+  border: 1px solid #464646;
+}
+
+.sirv-zoom-button {
+  border: none;
+}
 /*# sourceMappingURL=project-images.css.map */
