@@ -15,7 +15,7 @@ export default class ImageSlideshow extends Component {
 
   componentDidMount() {
     this.changeImage(this.props.projectImages.length);
-    setTimeout(this.setSliderSizes, 0);
+    setTimeout(this.setSliderSizes, 200);
   }
 
   setSliderSizes = () => {

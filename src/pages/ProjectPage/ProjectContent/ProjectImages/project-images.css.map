@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,wBAAwB,CAAC;EACvB,KAAK,EAAE,gBAAgB;EACvB,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,iBAAiB;CAC1B",
     "sources": [
         "project-images.scss"
     ],

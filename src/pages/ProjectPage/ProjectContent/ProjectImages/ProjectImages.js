@@ -1,10 +1,16 @@
 import React from "react";
 
-export const ProjectImages = ({ projectImages }) => {
+import "./project-images.css";
+
+export const ProjectImages = ({ projectName, projectImages }) => {
   return (
-    <div className="images-section">
+    <div
+      className="Sirv process-image-container"
+      data-effect="zoom"
+      data-options="zoom-on-wheel:false; fullscreen-only:true;"
+    >
       {projectImages.map(image => {
-        return <img src={image} alt="project" />;
+        return <img data-src={`https://omperiap.sirv.com/${projectName}/${image}`} />;
       })}
     </div>
   );

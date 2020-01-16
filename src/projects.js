@@ -38,12 +38,28 @@ const trackerSlider = [
 const folioSlider = [folioSlide1, folioSlide2, folioSlide3, folioSlide4];
 const primalSlider = [primalSlide1, primalSlide2, primalSlide3, primalSlide4];
 
+const clusterProcess = [
+  "mid-fid.png",
+  "final-design.png",
+  "mc-sketch1.jpg",
+  "mc-sketch2.jpg",
+  "mc-sketch3.jpg",
+];
+const folioProcess = [
+  "folio-final-deisgn.png",
+  "folio-sketches.png",
+  "folio-variations.png"
+];
+const primalProcess = ["pg-final.png", "pg-sketch1.jpg"];
+const trackerProcess = ["final-design.png"];
+
 const projects = [
   {
     name: "cluster",
     title: "Movie Cluster",
     logo: movieClusterLogo,
     sliderImages: clusterSlider,
+    processImages: clusterProcess,
     text:
       "Movie browsing website - discover top rated movies, find out what’s trending, watch trailers and more",
     description:
@@ -65,6 +81,7 @@ const projects = [
     title: "Personal Portfolio Website",
     logo: portfolioLogo,
     sliderImages: folioSlider,
+    processImages: folioProcess,
     text: "Personal portfolio website showcasing some of my projects",
     description:
       "Building a personal portfolio website using React to showcase some of my coding and design projects",
@@ -78,6 +95,7 @@ const projects = [
     title: "Bug Tracker",
     logo: trackerLogo,
     sliderImages: trackerSlider,
+    processImages: trackerProcess,
     text:
       "Application that helps teams maintain and manage issues during product development",
     description:
@@ -100,6 +118,7 @@ const projects = [
     title: "Primal Gym Website",
     logo: primalGymLogo,
     sliderImages: primalSlider,
+    processImages: primalProcess,
     text: "Fitness Gym Landing Page",
     description: "Building a fitness gym Landing Page using React.",
     software: ["REACT", "HTML/CSS", "JAVASCRIPT"],

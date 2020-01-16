@@ -73,7 +73,7 @@ export default class ProjectPage extends Component {
               />
             </ProjectButtons>
           )}
-          <ProjectContent />
+          <ProjectContent project={currentProject} />
         </div>
         <ProjectsSection layout={`slider`} />
       </div>
