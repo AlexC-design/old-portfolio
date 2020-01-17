@@ -10,7 +10,12 @@ export const ProjectImages = ({ projectName, projectImages }) => {
       data-options="zoom-on-wheel:false; fullscreen-only:true;"
     >
       {projectImages.map(image => {
-        return <img data-src={`https://omperiap.sirv.com/${projectName}/${image}`} />;
+        return (
+          <img
+            key={image}
+            data-src={`https://omperiap.sirv.com/${projectName}/${image}`}
+          />
+        );
       })}
     </div>
   );

@@ -60,7 +60,6 @@ const projects = [
     logo: movieClusterLogo,
     sliderImages: clusterSlider,
     processImages: clusterProcess,
-    videos: ["Take%20a%20seat.mp4?thumbnail=374"],
     text:
       "Movie browsing website - discover top rated movies, find out what’s trending, watch trailers and more",
     description:

@@ -18,12 +18,72 @@ const loaaSlider = [loaaSlide1, loaaSlide2, loaaSlide3];
 const loawSlider = [loawSlide1, loawSlide2, loawSlide3];
 const tasSlider = [tasSlide1, tasSlide2, tasSlide3];
 
+const loaaProcess = ["loaa-final-design.png", "loaa-sketch1.jpg"];
+const loawProcess = ["loaw-final-design.png", "loaw-sketch1.png"];
+const tasProcess = [
+  "tas-final-design.png",
+  "tas-sketch1.png",
+  "tas-sketch2.png"
+];
+
+const tasVideos = [
+  {
+    url: "tas-flow.mp4",
+    autoplay: false,
+    controls: true,
+    width: "374",
+    heigth: "812"
+  }
+];
+const loaaVideos = [
+  {
+    url: "loaa-flow.mp4",
+    autoplay: true,
+    controls: true,
+    width: "350",
+    heigth: "630"
+  },
+  {
+    url: "loaa-discuss.mp4",
+    autoplay: true,
+    controls: true,
+    width: "350",
+    heigth: "630"
+  },
+  {
+    url: "loaa-learn.mp4",
+    autoplay: true,
+    controls: true,
+    width: "350",
+    heigth: "630"
+  }
+];
+
+const loawVideos = [
+  {
+    url: "loaw-resonsize.mp4",
+    autoplay: false,
+    controls: true,
+    width: `${1680 / 2}`,
+    heigth: `${1200 / 2}`
+  },
+  {
+    url: "loaw-resonsize.mp4",
+    autoplay: false,
+    controls: true,
+    width: `${1274 / 2}`,
+    heigth: `${890 / 2}`
+  }
+];
+
 const projects = [
   {
     name: "tas",
     title: "Take a seat",
     logo: tasLogo,
     sliderImages: tasSlider,
+    processImages: tasProcess,
+    videos: tasVideos,
     text: "Restaurant reservation app deisgn",
     description:
       "Designing a mobile app that facilitates the process of restaurant reservations through the use of graphical layouts.",
@@ -34,6 +94,8 @@ const projects = [
     title: "Line of action - Website Redesign",
     logo: loawLogo,
     sliderImages: loawSlider,
+    processImages: loawProcess,
+    videos: loawVideos,
     text: "Redesigning 'Line of Action' website",
     description:
       "Website redesign for Line of action - tools and resource for artists looking to improve their work.",
@@ -44,6 +106,8 @@ const projects = [
     title: "Line of action - Mobile Application",
     logo: loaaLogo,
     sliderImages: loaaSlider,
+    processImages: loaaProcess,
+    videos: loaaVideos,
     text:
       "Application design for Line of action - tools and resources for artists looking to improve their work",
     description:
