@@ -1,3 +1,5 @@
+@import "../../../scss/variables.scss";
+
 .buttons-container {
   width: 1800px;
   display: flex;
@@ -6,6 +8,10 @@
   margin: 50px 0;
 
   animation: buttons-slide-in 1s ease-out forwards;
+
+  @include width1600 {
+    max-width: 1200px;
+  }
 
   @keyframes buttons-slide-in {
     from {

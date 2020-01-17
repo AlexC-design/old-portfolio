@@ -26,5 +26,13 @@ $projects: (
   loa: loa-dark,
   folio: primary,
   loaa: loa-dark,
-  loaw: loa-dark,
+  loaw: loa-dark
 );
+
+// --- MEDIA QUERYS ---
+
+@mixin width1600 {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}

@@ -13,8 +13,14 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 1800px;
+  width: 1600px;
   margin-bottom: 100px;
+}
+
+@media (max-width: 1600px) {
+  .other-tools-section {
+    width: 1200px;
+  }
 }
 
 .other-tools-section .other-tools-names {
@@ -31,5 +37,11 @@
   border-radius: 5px;
   padding: 20px 80px;
   margin: 10px 20px;
+}
+
+@media (max-width: 1600px) {
+  .other-tools-section .other-tools-names * {
+    padding: 10px 40px;
+  }
 }
 /*# sourceMappingURL=other-tools.css.map */

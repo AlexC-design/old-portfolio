@@ -18,9 +18,16 @@
   max-width: 1600px;
 }
 
+@media (max-width: 1600px) {
+  .projects-display.grid .projects-container {
+    max-width: 1200px;
+  }
+}
+
 .projects-display.slider {
   position: relative;
   width: 50vw;
+  height: 530px;
 }
 
 .projects-display.slider .projects-container {
@@ -38,5 +45,11 @@
 
 .projects-display.slider a {
   width: 900px;
+}
+
+@media (max-width: 1600px) {
+  .projects-display.slider a {
+    width: 600px;
+  }
 }
 /*# sourceMappingURL=projects-display.css.map */

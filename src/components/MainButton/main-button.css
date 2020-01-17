@@ -3,7 +3,7 @@
   height: 100px;
   border: none;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 1.9em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +20,13 @@
   cursor: pointer;
   -webkit-animation: fade-in 1s ease-out forwards;
           animation: fade-in 1s ease-out forwards;
+}
+
+@media (max-width: 1600px) {
+  .main-button {
+    width: 500px;
+    height: 100px;
+  }
 }
 
 .main-button:focus {

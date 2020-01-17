@@ -1,5 +1,18 @@
 .images-slideshow {
   position: relative;
+  width: 750px;
+  height: 278px;
+}
+
+@media (max-width: 1600px) {
+  .images-slideshow {
+    width: calc(750px * 0.7);
+    height: calc(278px * 0.7);
+  }
+  .images-slideshow img {
+    width: calc(750px * 0.7);
+    height: calc(278px * 0.7);
+  }
 }
 
 .images-slideshow .slideshow-image {

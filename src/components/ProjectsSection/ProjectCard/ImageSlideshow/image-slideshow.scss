@@ -1,5 +1,21 @@
+@import "../../../../scss/variables.scss";
+
+$imageWidth: 750px;
+$imageHeigth: 278px;
+
 .images-slideshow {
   position: relative;
+  width: $imageWidth;
+  height: $imageHeigth;
+
+  @include width1600 {
+    width: calc(#{$imageWidth} * 0.7);
+    height: calc(#{$imageHeigth} * 0.7);
+    img {
+      width: calc(#{$imageWidth} * 0.7);
+      height: calc(#{$imageHeigth} * 0.7);
+    }
+  }
 
   .slideshow-image {
     position: absolute;

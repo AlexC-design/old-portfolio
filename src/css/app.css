@@ -9,6 +9,13 @@ html * {
 }
 
 html body {
+  font-size: 16px;
   color: #0f1f38;
+}
+
+@media (max-width: 1600px) {
+  html body {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=app.css.map */

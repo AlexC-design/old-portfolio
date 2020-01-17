@@ -7,6 +7,10 @@
   margin-right: 20px;
   margin-bottom: 20px;
 
+  @include width1600 {
+    margin: 0;
+  }
+
   .tool-name {
     height: 35px;
     max-width: 80px;
@@ -29,6 +33,10 @@
     transform: scale(0.8);
 
     transition: filter 0.4s ease-out;
+
+    @include width1600 {
+      transform: scale(0.7);
+    }
   }
 
   .filter-blue {

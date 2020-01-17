@@ -9,7 +9,7 @@
 }
 
 .about-page .tech-section {
-  width: 1800px;
+  width: 1600px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,6 +24,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1600px) {
+  .about-page .tech-section {
+    width: 1200px;
+  }
 }
 
 .about-page .tech-section h1 {

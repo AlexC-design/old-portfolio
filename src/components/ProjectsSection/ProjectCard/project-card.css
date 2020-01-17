@@ -63,6 +63,13 @@
   margin: 20px 0;
 }
 
+@media (max-width: 1600px) {
+  .project-card-container .project-card-top .logo-container .project-logo {
+    width: calc(297px * 0.8);
+    height: calc(79px * 0.8);
+  }
+}
+
 .project-card-container .project-card-top .project-gif {
   width: 750px;
   height: auto;

@@ -7,25 +7,13 @@ export default class ImageSlideshow extends Component {
     super(props);
 
     this.state = {
-      imageHeight: 278,
-      imageWidth: 750,
       currentImage: 0
     };
   }
 
   componentDidMount() {
     this.changeImage(this.props.projectImages.length);
-    setTimeout(this.setSliderSizes, 200);
   }
-
-  setSliderSizes = () => {
-    this.setState({
-      imageHeight: document.querySelector(".slideshow-image").offsetHeight
-    });
-    this.setState({
-      imageWidth: document.querySelector(".slideshow-image").offsetWidth
-    });
-  };
 
   changeImage = imagesLength => {
     if (this.state.currentImage === imagesLength - 1) {
@@ -43,15 +31,8 @@ export default class ImageSlideshow extends Component {
   };
 
   render() {
-    
     return (
-      <div
-        className="images-slideshow"
-        style={{
-          height: `${this.state.imageHeight ? this.state.imageHeight : 278}px`,
-          width: `${this.state.imageWidth ? this.state.imageWidth : 750}px`
-        }}
-      >
+      <div className="images-slideshow">
         {this.props.projectImages.map((image, index) => {
           return (
             <img

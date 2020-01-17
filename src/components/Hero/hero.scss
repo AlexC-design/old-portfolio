@@ -11,6 +11,10 @@
 
   transition: height 1s ease-out;
 
+  @include width1600 {
+    height: 400px;
+  }
+
   .hero-content {
     display: flex;
     flex-direction: row;
@@ -29,12 +33,24 @@
 
     animation: contract-hero 1s ease-out forwards;
 
+    @include width1600 {
+      animation: contract-hero1600 1s ease-out forwards;
+    }
+
     @keyframes contract-hero {
       from {
         height: 700px;
       }
       to {
         height: 500px;
+      }
+    }
+    @keyframes contract-hero1600 {
+      from {
+        height: 500px;
+      }
+      to {
+        height: 400px;
       }
     }
   }
@@ -49,12 +65,25 @@
 
     animation: expand-hero 1s ease-out forwards;
 
+    @include width1600 {
+      animation: expand-hero1600 1s ease-out forwards;
+    }
+
     @keyframes expand-hero {
       from {
         height: 500px;
       }
       to {
         height: 700px;
+      }
+    }
+
+    @keyframes expand-hero1600 {
+      from {
+        height: 400px;
+      }
+      to {
+        height: 500px;
       }
     }
 
