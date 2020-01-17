@@ -24,6 +24,14 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .projects-display.grid .projects-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    max-width: 550px;
+  }
+}
+
 .projects-display.slider {
   position: relative;
   width: 50vw;

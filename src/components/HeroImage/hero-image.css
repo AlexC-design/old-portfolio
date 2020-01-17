@@ -13,6 +13,14 @@
           align-items: flex-start;
 }
 
+@media (max-width: 1600px) {
+  .project-image-container {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+}
+
 .project-image-container .images-slideshow {
   -webkit-animation: fade-in 1s ease-out forwards;
           animation: fade-in 1s ease-out forwards;

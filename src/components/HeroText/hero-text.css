@@ -11,6 +11,14 @@
           animation: fade-in 1s ease-out forwards;
 }
 
+@media (max-width: 1200px) {
+  .hero-text {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+}
+
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;

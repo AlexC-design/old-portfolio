@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,wBAAwB,CAAC;EACvB,IAAI,EAAE,CAAC;EAEP,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,UAAU;CAKxB;;AAVD,AAOE,wBAPsB,CAOtB,iBAAiB,CAAC;EAChB,SAAS,EAAE,4BAA4B;CACxC",
+    "mappings": "AAEA,AAAA,wBAAwB,CAAC;EACvB,IAAI,EAAE,CAAC;EAEP,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,UAAU;CASxB;;ACkBC,MAAM,EAAE,SAAS,EAAE,MAAM;EDhC3B,AAAA,wBAAwB,CAAC;IAQrB,IAAI,EAAE,KAAK;GAMd;;;AAdD,AAWE,wBAXsB,CAWtB,iBAAiB,CAAC;EAChB,SAAS,EAAE,4BAA4B;CACxC",
     "sources": [
-        "hero-image.scss"
+        "hero-image.scss",
+        "../../scss/variables.scss"
     ],
     "names": [],
     "file": "hero-image.css"

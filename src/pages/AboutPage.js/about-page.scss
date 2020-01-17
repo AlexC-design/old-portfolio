@@ -1,4 +1,4 @@
-@import '../../scss/variables.scss';
+@import "../../scss/variables.scss";
 
 .about-page {
   display: flex;
@@ -15,6 +15,14 @@
 
     @include width1600 {
       width: 1200px;
+    }
+
+    @include width1600 {
+      width: 550px;
+
+      .tools-icons-container {
+        margin: 0;
+      }
     }
 
     h1 {

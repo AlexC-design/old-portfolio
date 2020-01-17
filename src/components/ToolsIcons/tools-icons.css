@@ -6,4 +6,10 @@
   -webkit-animation: fade-in 1s ease-out forwards;
           animation: fade-in 1s ease-out forwards;
 }
+
+@media (max-width: 1200px) {
+  .tools-icons-container {
+    margin-top: 50px;
+  }
+}
 /*# sourceMappingURL=tools-icons.css.map */

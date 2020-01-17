@@ -32,6 +32,15 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .about-page .tech-section {
+    width: 550px;
+  }
+  .about-page .tech-section .tools-icons-container {
+    margin: 0;
+  }
+}
+
 .about-page .tech-section h1 {
   margin: 50px 0;
 }

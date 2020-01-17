@@ -53,6 +53,16 @@
 
     justify-content: space-evenly;
 
+    @include width1200 {
+      padding: 200px 10%;
+
+      justify-content: space-between;
+
+      h3:nth-child(n + 2) {
+        font-size: 1.5em !important;
+      }
+    }
+
     .text-container {
       height: 200px;
 
@@ -77,6 +87,10 @@
       display: flex;
       flex-direction: column;
       padding-right: 100px;
+
+      @include width1200 {
+        padding: 0;
+      }
 
       img {
         height: 70px;

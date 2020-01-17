@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACrB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EAErC,SAAS,EAAE,4BAA4B;CACxC",
+    "mappings": "AAEA,AAAA,sBAAsB,CAAC;EACrB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EAErC,SAAS,EAAE,4BAA4B;CAKxC;;AC6BC,MAAM,EAAE,SAAS,EAAE,MAAM;EDtC3B,AAAA,sBAAsB,CAAC;IAOnB,UAAU,EAAE,IAAI;GAEnB",
     "sources": [
-        "tools-icons.scss"
+        "tools-icons.scss",
+        "../../scss/variables.scss"
     ],
     "names": [],
     "file": "tools-icons.css"

@@ -76,6 +76,18 @@
           justify-content: space-evenly;
 }
 
+@media (max-width: 1200px) {
+  .footer.contact {
+    padding: 200px 10%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer.contact h3:nth-child(n + 2) {
+    font-size: 1.5em !important;
+  }
+}
+
 .footer.contact .text-container {
   height: 200px;
 }
@@ -119,6 +131,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 100px;
+}
+
+@media (max-width: 1200px) {
+  .footer.contact .icons-container {
+    padding: 0;
+  }
 }
 
 .footer.contact .icons-container img {

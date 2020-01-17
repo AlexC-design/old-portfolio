@@ -1,9 +1,15 @@
+@import "../../scss/variables.scss";
+
 .project-image-container {
   flex: 1;
 
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
+  @include width1600 {
+    flex: unset;
+  }
 
   .images-slideshow {
     animation: fade-in 1s ease-out forwards;

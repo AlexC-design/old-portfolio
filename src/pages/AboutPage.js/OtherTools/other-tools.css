@@ -23,6 +23,16 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .other-tools-section {
+    width: 550px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .other-tools-section .other-tools-names {
   color: white;
   font-weight: bold;
