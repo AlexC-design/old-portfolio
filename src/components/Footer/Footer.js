@@ -22,12 +22,17 @@ const Footer = props => {
         </div>
       </div>
       <div className="icons-container">
-        <a href="https://github.com/AlexC-design" target="_blank">
+        <a
+          href="https://github.com/AlexC-design"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={githubIcon} alt="github icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/alexandru-ciobotaru-655777193/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={linkedinIcon} alt="linked in icon" />
         </a>

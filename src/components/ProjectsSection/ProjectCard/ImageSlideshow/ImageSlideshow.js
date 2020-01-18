@@ -38,6 +38,7 @@ export default class ImageSlideshow extends Component {
             <img
               key={index}
               src={image}
+              alt="slide"
               className={`slideshow-image ${
                 index === this.state.currentImage ? "active" : ""
               }`}

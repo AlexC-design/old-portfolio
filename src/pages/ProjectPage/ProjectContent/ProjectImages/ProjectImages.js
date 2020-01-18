@@ -13,6 +13,7 @@ export const ProjectImages = ({ projectName, projectImages }) => {
         return (
           <img
             key={image}
+            alt="project slide"
             data-src={`https://omperiap.sirv.com/${projectName}/${image}`}
           />
         );
