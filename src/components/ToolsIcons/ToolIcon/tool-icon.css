@@ -58,6 +58,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .tool-icon img {
+    margin: -10px -10px 0;
+  }
+}
+
 .tool-icon .filter-blue {
   -webkit-filter: invert(79%) sepia(67%) saturate(891%) hue-rotate(166deg) brightness(100%) contrast(104%);
           filter: invert(79%) sepia(67%) saturate(891%) hue-rotate(166deg) brightness(100%) contrast(104%);

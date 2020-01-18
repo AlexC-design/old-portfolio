@@ -26,6 +26,11 @@
 
       width: 500px;
     }
+
+    @include width600 {
+      width: 100%;
+      padding: 0 10%;
+    }
   }
 
   &.home {
@@ -44,6 +49,11 @@
 
     @include width1200 {
       animation: contract-hero1200 1s ease-out forwards;
+    }
+
+    @include width600 {
+      animation: contract-hero600 1s ease-out forwards;
+      padding-top: 100px;
     }
 
     @keyframes contract-hero {
@@ -70,6 +80,15 @@
         height: 700px;
       }
     }
+
+    @keyframes contract-hero600 {
+      from {
+        height: 900px;
+      }
+      to {
+        height: 900px;
+      }
+    }
   }
 
   &.about {
@@ -86,7 +105,6 @@
       animation: expand-hero1600 1s ease-out forwards;
     }
 
-    
     @include width1200 {
       animation: expand-hero1200 1s ease-out forwards;
     }

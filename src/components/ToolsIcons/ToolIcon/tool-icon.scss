@@ -37,6 +37,10 @@
     @include width1600 {
       transform: scale(0.7);
     }
+
+    @include width600 {
+      margin: -10px -10px 0;
+    }
   }
 
   .filter-blue {

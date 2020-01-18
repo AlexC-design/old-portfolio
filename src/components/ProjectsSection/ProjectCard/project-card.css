@@ -70,12 +70,6 @@
   }
 }
 
-.project-card-container .project-card-top .project-gif {
-  width: 750px;
-  height: auto;
-  margin: 40px auto;
-}
-
 .project-card-container .project-card-bottom {
   display: -webkit-box;
   display: -ms-flexbox;

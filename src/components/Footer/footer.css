@@ -23,6 +23,16 @@
   transition: all 0.4s ease-out;
 }
 
+@media (max-width: 600px) {
+  .footer {
+    padding: 50px 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer .text-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +45,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+}
+
+@media (max-width: 600px) {
+  .footer .text-container {
+    max-height: 70px;
+  }
 }
 
 .footer .icons-container {

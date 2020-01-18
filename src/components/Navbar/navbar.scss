@@ -27,6 +27,11 @@
       width: 60%;
     }
 
+    @include width600 {
+      width: 80%;
+      top: 5px;
+    }
+
     &.primary {
       background-color: mix(color(primary), rgba(0, 0, 0, 0), 80%);
     }

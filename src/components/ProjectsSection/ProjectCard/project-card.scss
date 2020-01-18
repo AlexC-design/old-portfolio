@@ -43,17 +43,10 @@
         margin: 20px 0;
 
         @include width1600 {
-
           width: calc(297px * 0.8);
           height: calc(79px * 0.8);
         }
       }
-    }
-
-    .project-gif {
-      width: 750px;
-      height: auto;
-      margin: 40px auto;
     }
   }
 

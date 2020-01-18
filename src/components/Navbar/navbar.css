@@ -37,6 +37,13 @@
   }
 }
 
+@media (max-width: 600px) {
+  .navbar-container .navbar {
+    width: 80%;
+    top: 5px;
+  }
+}
+
 .navbar-container .navbar.primary {
   background-color: rgba(26, 44, 73, 0.8);
 }

@@ -33,6 +33,14 @@
   }
 }
 
+@media (max-width: 600px) {
+  .buttons-container {
+    max-width: 300px;
+    margin: 25px 0;
+    font-size: 0.8em;
+  }
+}
+
 @-webkit-keyframes buttons-slide-in {
   from {
     width: 4000px;

@@ -15,6 +15,19 @@
   }
 }
 
+@media (max-width: 600px) {
+  .images-slideshow {
+    width: 100%;
+    height: unset;
+    padding-top: 40%;
+  }
+  .images-slideshow img {
+    top: 10%;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .images-slideshow .slideshow-image {
   position: absolute;
   opacity: 0;

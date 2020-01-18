@@ -48,6 +48,10 @@
     text-align: center;
     width: 90%;
 
+    @include width600 {
+      width: 100%;
+    }
+
     .tech-tab {
       margin: 0 10px 20px;
       height: 30px;
@@ -59,6 +63,11 @@
       justify-content: center;
       font-weight: bold;
       color: color(project-dark);
+
+      @include width600 {
+        margin: 0 5px 5px;
+        font-size: 0.8em;
+      }
     }
   }
 }

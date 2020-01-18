@@ -29,6 +29,13 @@
   }
 }
 
+@media (max-width: 600px) {
+  .main-button {
+    width: 150px;
+    height: 70px;
+  }
+}
+
 .main-button:focus {
   outline: none;
 }

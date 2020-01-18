@@ -21,6 +21,11 @@
     height: 100px;
   }
 
+  @include width600 {
+    width: 150px;
+    height: 70px;
+  }
+
   &:focus {
     outline: none;
   }

@@ -42,3 +42,9 @@ $projects: (
     @content;
   }
 }
+
+@mixin width600 {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

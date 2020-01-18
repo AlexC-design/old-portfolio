@@ -25,6 +25,12 @@
     }
   }
 
+  @include width600 {
+    max-width: 300px;
+    margin: 25px 0;
+    font-size: 0.8em;
+  }
+
   @keyframes buttons-slide-in {
     from {
       width: 4000px;
