@@ -27,7 +27,7 @@
 }
 
 .project-card-container:hover .hover-overlay {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .project-card-container .project-card-top {
@@ -86,6 +86,13 @@
   height: 100px;
   color: white;
   border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 600px) {
+  .project-card-container .project-card-bottom {
+    height: unset;
+    padding: 5px 0;
+  }
 }
 
 .project-card-container .project-card-bottom h2 {

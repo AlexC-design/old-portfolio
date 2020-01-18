@@ -12,10 +12,12 @@ import { withRouter } from "react-router-dom";
 const ProjectsSection = ({ layout, match }) => {
   const [currentView, setCurrentView] = useState("Websites");
   const [cardWidth, setCardWidth] = useState(0);
+  const [sliderVisibility, setSliderVisibility] = useState("inline");
   const [currentProjects, setCurrentProjects] = useState(projects);
 
   const sectionStyle = {
-    maxWidth: cardWidth
+    maxWidth: cardWidth,
+    // display: sliderVisibility
   };
 
   if (layout === "slider") {
@@ -40,6 +42,12 @@ const ProjectsSection = ({ layout, match }) => {
           (2 * window.innerWidth - e.clientX)) *
           e.clientX}px`;
       });
+    }
+
+    if (window.innerWidth <= 1200 && layout === "slider") {
+      setSliderVisibility("none");
+    } else {
+      setSliderVisibility("flex");
     }
   });
 

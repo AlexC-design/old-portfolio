@@ -18,4 +18,10 @@
 .projects-section.slider {
   margin: 50px auto;
 }
+
+@media (pointer: coarse) {
+  .projects-section.slider {
+    display: none;
+  }
+}
 /*# sourceMappingURL=projects-section.css.map */

@@ -7,5 +7,9 @@
 
   &.slider {
     margin: 50px auto;
+
+    @media (pointer: coarse) {
+      display: none;
+    }
   }
 }

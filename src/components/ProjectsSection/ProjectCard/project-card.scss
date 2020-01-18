@@ -16,7 +16,7 @@
     transform: scale(1.05);
 
     .hover-overlay {
-      opacity: 100%;
+      opacity: 1;
     }
   }
 
@@ -62,6 +62,11 @@
 
     color: white;
     border-radius: 0 0 10px 10px;
+
+    @include width600 {
+      height: unset;
+      padding: 5px 0;
+    }
 
     h2 {
       padding: 0 50px 10px;
