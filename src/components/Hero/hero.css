@@ -239,6 +239,19 @@
           flex-direction: row-reverse;
 }
 
+@media (max-width: 1200px) {
+  .hero-container.about .hero-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 150px;
+  }
+}
+
 .hero-container.cluster {
   padding-top: 160px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3d2242), color-stop(#3d2242), to(#4d2b53));
@@ -254,6 +267,12 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container.cluster {
+    padding-top: 100px;
   }
 }
 
@@ -275,6 +294,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .hero-container.tracker {
+    padding-top: 100px;
+  }
+}
+
 .hero-container.primal {
   padding-top: 160px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(#161616), to(#232323));
@@ -290,6 +315,12 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container.primal {
+    padding-top: 100px;
   }
 }
 
@@ -311,6 +342,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .hero-container.tas {
+    padding-top: 100px;
+  }
+}
+
 .hero-container.loa {
   padding-top: 160px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#272324), color-stop(#272324), to(#342f30));
@@ -326,6 +363,12 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container.loa {
+    padding-top: 100px;
   }
 }
 
@@ -347,6 +390,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .hero-container.folio {
+    padding-top: 100px;
+  }
+}
+
 .hero-container.loaa {
   padding-top: 160px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#272324), color-stop(#272324), to(#342f30));
@@ -365,6 +414,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .hero-container.loaa {
+    padding-top: 100px;
+  }
+}
+
 .hero-container.loaw {
   padding-top: 160px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#272324), color-stop(#272324), to(#342f30));
@@ -380,6 +435,12 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container.loaw {
+    padding-top: 100px;
   }
 }
 /*# sourceMappingURL=hero.css.map */

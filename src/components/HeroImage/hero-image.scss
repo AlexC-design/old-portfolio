@@ -11,6 +11,11 @@
     flex: unset;
   }
 
+  @include width600 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
   .images-slideshow {
     animation: fade-in 1s ease-out forwards;
   }

@@ -11,6 +11,7 @@
 
   transition: height 1s ease-out;
 
+
   .hero-content {
     display: flex;
     flex-direction: row;
@@ -138,6 +139,12 @@
 
     .hero-content {
       flex-direction: row-reverse;
+
+      @include width1200 {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-top: 150px;
+      }
     }
   }
 
@@ -155,6 +162,10 @@
           flex-direction: column-reverse;
           justify-content: flex-end;
         }
+      }
+
+      @include width600 {
+        padding-top: 100px;
       }
     }
   }

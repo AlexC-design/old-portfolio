@@ -33,6 +33,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .other-tools-section {
+    width: 300px;
+  }
+}
+
 .other-tools-section .other-tools-names {
   color: white;
   font-weight: bold;
@@ -52,6 +58,13 @@
 @media (max-width: 1600px) {
   .other-tools-section .other-tools-names * {
     padding: 10px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .other-tools-section .other-tools-names * {
+    padding: 5px 10px;
+    margin: 5px;
   }
 }
 /*# sourceMappingURL=other-tools.css.map */

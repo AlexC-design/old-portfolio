@@ -20,6 +20,10 @@
     flex-direction: column;
   }
 
+  @include width600 {
+    width: 300px;
+  }
+
   .other-tools-names {
     color: white;
     font-weight: bold;
@@ -35,6 +39,11 @@
 
       @include width1600 {
         padding: 10px 40px;
+      }
+
+      @include width600 {
+        padding: 5px 10px;
+        margin: 5px;
       }
     }
   }

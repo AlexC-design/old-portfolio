@@ -32,12 +32,18 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
   .about-page .tech-section {
     width: 550px;
   }
   .about-page .tech-section .tools-icons-container {
     margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-page .tech-section {
+    width: 300px;
   }
 }
 

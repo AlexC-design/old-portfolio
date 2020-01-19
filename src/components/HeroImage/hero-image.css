@@ -21,6 +21,13 @@
   }
 }
 
+@media (max-width: 600px) {
+  .project-image-container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
 .project-image-container .images-slideshow {
   -webkit-animation: fade-in 1s ease-out forwards;
           animation: fade-in 1s ease-out forwards;

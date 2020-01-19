@@ -17,12 +17,16 @@
       width: 1200px;
     }
 
-    @include width1600 {
+    @include width1200 {
       width: 550px;
 
       .tools-icons-container {
         margin: 0;
       }
+    }
+
+    @include width600 {
+      width: 300px;
     }
 
     h1 {
