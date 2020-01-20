@@ -56,6 +56,11 @@
 
   .github-icon {
     margin-left: 20px;
+
+    @include width600 {
+      width: 30px;
+      margin-left: 10px;
+    }
   }
 
   &.primary {
@@ -85,6 +90,10 @@
     border: 2px solid color(dark-gray);
 
     color: color(dark-gray);
+
+    p {
+      font-size: 0.8em;
+    }
 
     &.selected {
       background-color: color(dark-gray);

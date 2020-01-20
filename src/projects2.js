@@ -1,3 +1,5 @@
+import React from "react";
+
 import loaaLogo from "./assets/logos/line-of-action-app-logo.png";
 import loawLogo from "./assets/logos/line-of-action-website-logo.png";
 import tasLogo from "./assets/logos/take-a-seat-logo.png";
@@ -76,6 +78,48 @@ const loawVideos = [
   }
 ];
 
+const tasText = [
+  {
+    title: "Project Overview",
+    paragraph:
+      "Design a mobile app that allows the user to find restaurants, cafes or pubs nearby and make reservations."
+  },
+  {
+    paragraph:
+      "The user will be able to find restaurants either searching for them by name or address, or by finding them on the map."
+  },
+  {
+    paragraph:
+      "The reservation process will be aided by a graphical layout display of the establishment."
+  },
+  {
+    paragraph:
+      "The user will be able to select their prefered table, date and time, as well as seeing which tables are booked at a specific time."
+  },
+  {
+    title: "Objective",
+    paragraph:
+      "The goal​ is to increase the number of costumers by facilitating the reservation process."
+  },
+  {
+    paragraph:
+      "Through the use of a graphical display of the restaurant's layout, the process of finding a restaurant and reserving a table becomes simple and effortless."
+  },
+  {
+    title: "Process",
+    paragraph:
+      "After gathering feedback from user research by interviewing potential users of the service, I've summarized the key findings into user personas."
+  },
+  {
+    paragraph:
+      "Using the information gathered I've established the navigation taxonomy and sketched out the application map to determine the structure of the application"
+  },
+  {
+    paragraph:
+      "Next, I've created wireframe designs for each page, outlining the relation between pages and a general user flow, followed by the high fidelity prototype."
+  }
+];
+
 const projects = [
   {
     name: "tas",
@@ -85,6 +129,7 @@ const projects = [
     processImages: tasProcess,
     videos: tasVideos,
     text: "Restaurant reservation app deisgn",
+    projectText: tasText,
     description:
       "Designing a mobile app that facilitates the process of restaurant reservations through the use of graphical layouts.",
     software: ["ADOBE XD", "FIGMA", "AFTER EFFECTS", "PHOTOSHOP"]

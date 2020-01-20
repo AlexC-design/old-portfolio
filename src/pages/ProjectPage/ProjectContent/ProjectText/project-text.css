@@ -1,0 +1,34 @@
+.project-text-section {
+  max-width: 1600px;
+  padding: 0 12px;
+}
+
+@media (max-width: 1600px) {
+  .project-text-section {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-text-section {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-text-section {
+    max-width: 320px;
+  }
+}
+
+.project-text-section .text-title {
+  font-size: 2em;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.project-text-section .text-paragraph {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=project-text.css.map */

@@ -15,5 +15,6 @@ export const codeTools = [
   "OAuth 2.0",
   "React-Router",
   "Git",
+  "SASS",
   "Semantic UI"
 ];
