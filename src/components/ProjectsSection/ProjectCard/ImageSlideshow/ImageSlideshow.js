@@ -24,11 +24,15 @@ export default class ImageSlideshow extends Component {
       });
     }
 
-    setTimeout(
+    this.setTimeoutId = setTimeout(
       () => this.changeImage(imagesLength),
       2000 + Math.floor(Math.random() * 1001)
     );
   };
+
+  componentWillUnmount() {
+    clearTimeout(this.setTimeoutId);
+  }
 
   render() {
     return (

@@ -1,5 +1,3 @@
-import React from "react";
-
 import loaaLogo from "./assets/logos/line-of-action-app-logo.png";
 import loawLogo from "./assets/logos/line-of-action-website-logo.png";
 import tasLogo from "./assets/logos/take-a-seat-logo.png";
