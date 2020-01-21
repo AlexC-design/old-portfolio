@@ -1,11 +1,12 @@
 .project-text-section {
-  max-width: 1600px;
+  max-width: 900px;
   padding: 0 12px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 1600px) {
   .project-text-section {
-    max-width: 1200px;
+    max-width: 800px;
   }
 }
 
@@ -22,13 +23,27 @@
 }
 
 .project-text-section .text-title {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   margin: 30px 0;
 }
 
+@media (max-width: 1600px) {
+  .project-text-section .text-title {
+    font-size: 2em;
+  }
+}
+
 .project-text-section .text-paragraph {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 15px;
+  list-style: disc outside none;
+  display: list-item;
+}
+
+@media (max-width: 1600px) {
+  .project-text-section .text-paragraph {
+    font-size: 1.2em;
+  }
 }
 /*# sourceMappingURL=project-text.css.map */

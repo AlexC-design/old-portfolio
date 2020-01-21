@@ -1,13 +1,38 @@
+@import "../../../../scss/variables.scss";
+
 .process-image-container {
   width: 800px !important;
   height: auto !important;
   margin: 0 auto !important;
 }
 
-.sirv-zoom-thumbnails li {
-  border: 1px solid rgb(70, 70, 70);
+.thumbnails-wrapper {
+  background-color: color(project-dark);
+  border-radius: 10px;
+  border: 10px solid color(project-dark);
+
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    background-color: color(dark-gray);
+    border-color: color(dark-gray);
+  }
 }
 
 .sirv-zoom-button {
-  border: none;
+  border-radius: 10px;
+}
+
+.sirv-thumbnails ul > li > img {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid color(project-dark);
+
+  &:hover {
+    border: 2px solid color(accent);
+  }
+}
+
+.sirv-thumb-selected > img {
+  border: 3px solid color(secondary) !important;
 }

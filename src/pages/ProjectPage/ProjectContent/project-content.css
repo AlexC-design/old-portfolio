@@ -22,6 +22,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 100px 0;
 }
 
 @media (max-width: 1200px) {

@@ -13,6 +13,8 @@
     display: flex;
     flex-direction: row;
 
+    margin: 100px 0;
+
     @include width1200 {
       flex-direction: column;
     }

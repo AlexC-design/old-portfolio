@@ -4,11 +4,34 @@
   margin: 0 auto !important;
 }
 
-.sirv-zoom-thumbnails li {
-  border: 1px solid #464646;
+.thumbnails-wrapper {
+  background-color: #161616;
+  border-radius: 10px;
+  border: 10px solid #161616;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.thumbnails-wrapper:hover {
+  background-color: #494949;
+  border-color: #494949;
 }
 
 .sirv-zoom-button {
-  border: none;
+  border-radius: 10px;
+}
+
+.sirv-thumbnails ul > li > img {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid #161616;
+}
+
+.sirv-thumbnails ul > li > img:hover {
+  border: 2px solid #ffb800;
+}
+
+.sirv-thumb-selected > img {
+  border: 3px solid #6fdcff !important;
 }
 /*# sourceMappingURL=project-images.css.map */
