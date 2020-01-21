@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import "./back-to-projects.css";
 
@@ -10,10 +10,10 @@ const BackToProjects = ({ history }) => {
     setTimeout(
       () =>
         window.scrollTo({
-          top: document.querySelector(".projects-section").offsetTop,
+          top: document.querySelector(".hero-content").offsetHeight,
           behavior: "smooth"
         }),
-      200
+      100
     );
   };
 

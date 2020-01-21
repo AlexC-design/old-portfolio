@@ -39,21 +39,21 @@ const loaaVideos = [
   {
     url: "loaa-flow.mp4",
     autoplay: true,
-    controls: true,
-    width: "350",
-    heigth: "630"
-  },
-  {
-    url: "loaa-discuss.mp4",
-    autoplay: true,
-    controls: true,
+    controls: false,
     width: "350",
     heigth: "630"
   },
   {
     url: "loaa-learn.mp4",
     autoplay: true,
-    controls: true,
+    controls: false,
+    width: "350",
+    heigth: "630"
+  },
+  {
+    url: "loaa-discuss.mp4",
+    autoplay: true,
+    controls: false,
     width: "350",
     heigth: "630"
   }
@@ -61,18 +61,18 @@ const loaaVideos = [
 
 const loawVideos = [
   {
-    url: "loaw-resonsize.mp4",
-    autoplay: false,
-    controls: true,
-    width: `${1680 / 2}`,
-    heigth: `${1200 / 2}`
+    url: "loaw-responsive.mp4",
+    autoplay: true,
+    controls: false,
+    width: `${1274 / 3}`,
+    heigth: `${890 / 3}`
   },
   {
-    url: "loaw-resonsize.mp4",
-    autoplay: false,
-    controls: true,
-    width: `${1274 / 2}`,
-    heigth: `${890 / 2}`
+    url: "loaw-MainPageToDrawScroll.mp4",
+    autoplay: true,
+    controls: false,
+    width: `${1274 / 3}`,
+    heigth: `${890 / 3}`
   }
 ];
 
@@ -81,10 +81,6 @@ const tasText = [
     title: "Project Overview",
     paragraph:
       "Design a mobile app that allows the user to find restaurants, cafes or pubs nearby and make reservations."
-  },
-  {
-    paragraph:
-      "The user will be able to find restaurants either searching for them by name or address, or by finding them on the map."
   },
   {
     paragraph:
@@ -118,6 +114,90 @@ const tasText = [
   }
 ];
 
+const loawText = [
+  {
+    title: "Project Overview",
+    paragraph:
+      "Line of action is a website that offers tools, resources and a community for artists looking to improve their craft."
+  },
+  {
+    paragraph:
+      "Their main feature is the gesture drawing tool that allows artists to take on study sessions and practice from a pre-selected set of images for a set amount of time."
+  },
+  {
+    paragraph:
+      "The website also offers other types of resources, like books, lessons, tips, art-related articles and a community of artists looking to improve and help each other by offering critique, practice advice and sharing the knowledge gained through their learning experience."
+  },
+  {
+    paragraph:
+      "Having used their website for a while now, I've noticed it could use some improvements in terms of usability, as well as layout and general aesthetics.So I've decided to take on the challenge of redesigning the website to improve the user experience and to better communicate the brand values"
+  },
+  {
+    title: "Process",
+    paragraph:
+      "I started by researching the current website architecture and taking notes on the usability issues, while also suggesting possible solutions to the existing problems."
+  },
+  {
+    paragraph:
+      "The goal of the changes is to reduce confusion by creating a more intuitive navigation process, enabling the user to access different features of the website with ease."
+  },
+  {
+    paragraph:
+      "I started by designing the hero section of the main page, keeping their current logo, and the handwritten style of the logotype, suitable for the brand, but changing it to something a bit more simple and versatile."
+  },
+  {
+    paragraph:
+      "Following the design guidelines and styling of the main page, I've redesigned the rest of the pages based on the notes taken during the research phase."
+  }
+];
+
+const loaaText = [
+  {
+    title: "Project Overview",
+    paragraph:
+      "Following the website re-design for Line of action, I've decided to create a mobile app design, as after browsing the 'Support & Suggestions' section of their forums I've noticed there is demand for a mobile version from some of the users."
+  },
+  {
+    paragraph:
+      "Additionally, mobile apps offer more features that their service could benefit from and enhance the user's experience, like:"
+  },
+  {
+    paragraph:
+      "making use of mobile device features (uploading work for critiques by taking photos directly from the app)"
+  },
+  {
+    paragraph:
+      "ease of sending notifications (so that users can quickly get notified when they are receiving feedback on their work and keep the discussion going)"
+  },
+  {
+    paragraph: "ability to work offline"
+  },
+  {
+    paragraph: "better personalization"
+  },
+  {
+    title: "Process",
+    paragraph:
+      "Having a pretty good idea about all the features that need to be included in the app from doing the research for the website re-design, I started sketching out a basic layout for the main page to help me determine how to organize all of the items to provide the best usability for the mobile layout."
+  },
+  {
+    paragraph:
+      "I've chosen the draw tool as the starting page since this will be the main feature of the app, and I've grouped up the similar categories into a single tab to allow for easier and more intuitive navigation."
+  },
+  {
+    paragraph:
+      "Having less options presented at a time also helps declutter the UI and reduce the cognitive load on the user, resulting in a more pleasant and engaging experience."
+  },
+  {
+    paragraph:
+      "I've then sketched out wireframes for the application's features, creating different variations to help decide what is the best layout in terms of usability."
+  },
+  {
+    paragraph:
+      "Finally, I've created the high fidelity UI maintaining visual consistency with the design of the website."
+  }
+];
+
 const projects = [
   {
     name: "tas",
@@ -140,6 +220,7 @@ const projects = [
     processImages: loawProcess,
     videos: loawVideos,
     text: "Redesigning 'Line of Action' website",
+    projectText: loawText,
     description:
       "Website redesign for Line of action - tools and resource for artists looking to improve their work.",
     software: ["ADOBE XD", "FIGMA", "AFTER EFFECTS", "PHOTOSHOP"]
@@ -153,6 +234,7 @@ const projects = [
     videos: loaaVideos,
     text:
       "Application design for Line of action - tools and resources for artists looking to improve their work",
+    projectText: loaaText,
     description:
       "Designing a mobile app for Line of action - tools and resources for artists looking to improve their work.",
     software: ["ADOBE XD", "FIGMA", "AFTER EFFECTS", "PHOTOSHOP"]
