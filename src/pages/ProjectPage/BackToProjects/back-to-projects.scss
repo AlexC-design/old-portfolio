@@ -1,0 +1,33 @@
+@import "../../../scss/variables.scss";
+
+.back-button-container {
+  display: flex;
+  justify-content: center;
+
+  .back-button {
+    background-color: color(dark-gray);
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+
+    width: 200px;
+    height: 80px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: color(project-dark);
+    }
+
+    &:active {
+      background-color: lighten(color(dark-gray), 5%);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

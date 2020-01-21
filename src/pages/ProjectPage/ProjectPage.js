@@ -8,6 +8,7 @@ import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import ProjectButtons from "../../components/ProjectsSection/ProjectButtons/ProjectButtons";
 import projects from "../../projects";
 import projects2 from "../../projects2";
+import BackToProjects from "./BackToProjects/BackToProjects";
 
 import "./project-page.css";
 
@@ -75,7 +76,8 @@ export default class ProjectPage extends Component {
           )}
           <ProjectContent project={currentProject} />
         </div>
-        <ProjectsSection layout={`slider`} />
+        <BackToProjects />
+        {/* <ProjectsSection layout={`slider`} /> */}
       </div>
     );
   }
