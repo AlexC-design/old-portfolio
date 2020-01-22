@@ -73,7 +73,7 @@ const projects = [
       "JAVASCRIPT"
     ],
     secondarySoftware: ["Figma", "Photoshop", "Illustrator"],
-    liveLink: "https://alexc-design.github.io/movie-cluster",
+    liveLink: "https://alexc-design.github.io/movie-cluster/#/",
     codeLink: "https://github.com/AlexC-design/movie-cluster"
   },
   {
