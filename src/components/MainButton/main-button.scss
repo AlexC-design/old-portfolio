@@ -110,4 +110,31 @@
       }
     }
   }
+
+  &.gray {
+    background-color: transparent;
+    border: 2px solid color(dark-gray);
+    pointer-events: none;
+
+    color: color(dark-gray);
+
+    cursor: default;
+
+    p {
+      font-size: 0.8em;
+    }
+
+    &.selected {
+      background-color: rgb(124, 124, 124);
+      border: 0;
+
+      color: white;
+
+      .live-icon {
+        background-color: rgb(187, 171, 171);
+        box-shadow: 0 0 5px 0px rgb(194, 146, 146);
+        animation: none;
+      }
+    }
+  }
 }

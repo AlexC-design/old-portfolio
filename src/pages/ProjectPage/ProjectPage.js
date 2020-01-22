@@ -58,13 +58,24 @@ export default class ProjectPage extends Component {
         <div className="project-details-container">
           {projects.find(project => project.name === id) && (
             <ProjectButtons>
-              <MainButton
-                clickEvent={this.linkTo}
-                text="LiveVersion"
-                color="dark"
-                icon="live"
-                link={currentProject.liveLink}
-              />
+              {id !== "tracker" ? (
+                <MainButton
+                  clickEvent={this.linkTo}
+                  text="LiveVersion"
+                  color="dark"
+                  icon="live"
+                  link={currentProject.liveLink}
+                />
+              ) : (
+                <MainButton
+                  clickEvent={this.linkTo}
+                  text="In Progress"
+                  color="gray"
+                  icon="live"
+                  link={currentProject.liveLink}
+                />
+              )}
+
               <MainButton
                 clickEvent={this.linkTo}
                 text="Code"

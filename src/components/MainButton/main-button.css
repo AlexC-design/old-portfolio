@@ -138,4 +138,30 @@
 .main-button.dark.selected:active {
   background-color: #161616;
 }
+
+.main-button.gray {
+  background-color: transparent;
+  border: 2px solid #494949;
+  pointer-events: none;
+  color: #494949;
+  cursor: default;
+}
+
+.main-button.gray p {
+  font-size: 0.8em;
+}
+
+.main-button.gray.selected {
+  background-color: #7c7c7c;
+  border: 0;
+  color: white;
+}
+
+.main-button.gray.selected .live-icon {
+  background-color: #bbabab;
+  -webkit-box-shadow: 0 0 5px 0px #c29292;
+          box-shadow: 0 0 5px 0px #c29292;
+  -webkit-animation: none;
+          animation: none;
+}
 /*# sourceMappingURL=main-button.css.map */
