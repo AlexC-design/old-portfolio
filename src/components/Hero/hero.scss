@@ -11,7 +11,6 @@
 
   transition: height 1s ease-out;
 
-
   .hero-content {
     display: flex;
     flex-direction: row;
@@ -26,11 +25,30 @@
       text-align: left;
 
       width: 500px;
+
+      .hero-text.about-details {
+        padding-top: 50px;
+        h1 {
+          text-align: center;
+        }
+
+        h2 {
+          text-align: center;
+        }
+      }
     }
 
     @include width600 {
       width: 100%;
       padding: 0 10%;
+
+      .hero-text.about-details {
+        padding-top: 0px;
+        
+        p {
+          font-size: 1.3em;
+        }
+      }
     }
   }
 
@@ -142,8 +160,8 @@
 
       @include width1200 {
         flex-direction: column-reverse;
-        justify-content: flex-end;
-        padding-top: 150px;
+        align-self: flex-start;
+        padding-top: 0px;
       }
     }
   }

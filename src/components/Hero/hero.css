@@ -45,12 +45,27 @@
     text-align: left;
     width: 500px;
   }
+  .hero-container .hero-content .hero-text.about-details {
+    padding-top: 50px;
+  }
+  .hero-container .hero-content .hero-text.about-details h1 {
+    text-align: center;
+  }
+  .hero-container .hero-content .hero-text.about-details h2 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
   .hero-container .hero-content {
     width: 100%;
     padding: 0 10%;
+  }
+  .hero-container .hero-content .hero-text.about-details {
+    padding-top: 0px;
+  }
+  .hero-container .hero-content .hero-text.about-details p {
+    font-size: 1.3em;
   }
 }
 
@@ -245,10 +260,9 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding-top: 150px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 0px;
   }
 }
 
