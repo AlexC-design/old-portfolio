@@ -23,7 +23,8 @@ const loawProcess = ["loaw-final-design.png", "loaw-sketch1.png"];
 const tasProcess = [
   "tas-final-design.png",
   "tas-sketch1.png",
-  "tas-sketch2.png"
+  "tas-sketch2.png",
+  "personas.png"
 ];
 
 const tasVideos = [
