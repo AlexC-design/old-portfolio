@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-website",
+  "name": "alexc.design",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0"
   },
-  "homepage": "https://AlexC-design.github.io/portfolio-website",
+  "homepage": "https://AlexC-design.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
