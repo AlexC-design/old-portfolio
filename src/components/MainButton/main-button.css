@@ -41,9 +41,8 @@
 }
 
 .main-button .live-icon {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-left: 0px;
   width: 10px;
   height: 10px;
   border-radius: 50px;

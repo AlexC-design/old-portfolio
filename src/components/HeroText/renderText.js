@@ -24,13 +24,18 @@ export const renderText = page => {
             Design.
           </p>
           <p>
-            I have been working as a freelance concept artist and illustrator in
-            the video game industry for the past 4+ years and I am now looking
-            to switch carreers to Web Development.
+            I have been working as a concept artist and illustrator in the video
+            game industry until recently and I am now looking to get back into
+            Web Development.
           </p>
           <p>
-            You can see some of my concept art and illustration work in my
-            previous portfolio at{" "}
+            I've studied Computer Science at the University of Bucharest, and
+            for the past year, I've been focusing on Web Technologies and
+            Frameworks.
+          </p>
+          <p>
+            If you want to check out some of my previous work as a digital
+            artist visit:{" "}
             <a
               href="https://allexc.crevado.com/"
               target="_blank"

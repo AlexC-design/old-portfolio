@@ -65,7 +65,7 @@ const clusterText = [
   {
     title: "Project Overview",
     paragraph:
-      "The purpose of the project was to build a more complex website with React to practice using Redux. I also wanted to work with CSS more, because I really enjoyed it. I took the time to write my own CSS and learn more about it. "
+      "The purpose of the project was to build a more complex website with React to practice using Redux. I also wanted to work with CSS more, because I enjoyed it. I took the time to write my own CSS and learn more about it. "
   },
   {
     paragraph:
@@ -73,12 +73,12 @@ const clusterText = [
   },
   {
     paragraph:
-      "Building this project was also an exercise in integrating third party libraries, like simplebar-react. I used this because it was a easier way to reach the desired visual effect for the page's scrollbar."
+      "Building this project was also an exercise in integrating third-party libraries, like simplebar-react. I used this because it was an easier way to reach the desired visual effect for the page's scrollbar."
   },
   {
     title: "Process",
     paragraph:
-      "I started by sketching out the basic structure of the website on paper and defining all of it's components and features, after which I took it into Figma and built a mid fidelity wireframe. This helped me get a better understanding of the application as a whole and how the code should be structured."
+      "I started by sketching out the basic structure of the website on paper and defining all of its components and features, after which I took it into Figma and built a mid-fidelity wireframe. This helped me get a better understanding of the application as a whole and how the code should be structured."
   },
   {
     paragraph:
@@ -102,15 +102,15 @@ const folioText = [
   },
   {
     paragraph:
-      "Given the complexity of project, I decided I did not need Redux in order to build it. I didn't feel the need to use Redux, but from the get go I planned on using React's Context API if the need arose."
+      "Given the complexity of the project, I decided I did not need Redux to build it. I didn't feel the need to use Redux, but from the get-go I planned on using React's Context API if the need arose."
   },
   {
     paragraph:
-      "When building the project, I've encounter a problem. In order to be able to zoom on images, I tried to use Sirv, the hosting service I used for the images, by pulling in a script they provided. The script made changes to the DOM and this in turn caused React to crash. This was due to the fact that React was trying to perform an action on an element that had been moved from its place by the script, and it could no longer find it."
+      "When building the project, I've encountered a problem. To be able to zoom on images, I tried to use Sirv, the hosting service I used for the images, by pulling in a script they provided. The script made changes to the DOM and this, in turn, caused React to crash. This was because React was trying to perform an action on an element that had been moved from its place by the script, and it could no longer find it."
   },
   {
     paragraph:
-      "A temporary solution I found was to change the logic in my application in order to avoid the error. This does mean that I am not able to use a feature of the website that I really liked, but I am working on finding a way to fix the issue and bring back the feature."
+      "A temporary solution I found was to change the logic in my application to avoid the error. This does mean that I am not able to use a feature of the website that I really liked, but I am working on finding a way to fix the issue and bring back the feature."
   }
 ];
 
@@ -122,7 +122,7 @@ const trackerText = [
   {
     title: "Project Overview",
     paragraph:
-      "I started building this project in order to focus more on applying best practices and the lessons I've learned from my previous projects. I also wanted to try out new technologies like Redux Saga."
+      "I started building this project to focus more on applying best practices and the lessons I've learned from my previous projects. I also wanted to try out new technologies like Redux Saga."
   },
   {
     paragraph:
@@ -130,11 +130,11 @@ const trackerText = [
   },
   {
     paragraph:
-      "So far I've faced some challenges using Google's authentication service together with Redux Saga. One of the issues was that I had to find a way to get the authentication events from the service into Redux Saga. The solution I found was to use event channels in order to achieve the desired result."
+      "So far I've faced some challenges using Google's authentication service together with Redux Saga. One of the issues was that I had to find a way to get the authentication events from the service into Redux Saga. The solution I found was to use event channels to achieve the desired result."
   },
   {
     paragraph:
-      "I also took a keen interest in testing. In other projects, I either skipped testing alltogether or wrote tests afterwards. Here I am trying to apply TDD principles using Enzyme and Jest."
+      "I also took a keen interest in testing. In other projects, I either skipped testing altogether or wrote tests afterwards. Here I am trying to apply TDD principles using Enzyme and Jest."
   },
   {
     paragraph:
@@ -154,24 +154,24 @@ const primalText = [
   },
   {
     paragraph:
-      "Given the low complexity of the project from a technical point of view, I decided to also focus more on the styling of the website, as it would be a good opporunity to practice basic CSS concepts as well."
+      "Given the low complexity of the project from a technical point of view, I decided to also focus more on the styling of the website, as it would be a good opportunity to practice basic CSS concepts as well."
   },
   {
     paragraph:
-      "Some of the challanges I've faced during this project arised from my underestimation of how easy it would be to translate the design I've created into the actual website. This turned out to be more complex than I was expecting, but in the end I managed to achieve the desired result and it was a very good learning experience."
+      "Some of the challenges I've faced during this project arose from my underestimation of how easy it would be to translate the design I've created into the actual website. This turned out to be more complex than I was expecting, but in the end, I managed to achieve the desired result and it was a very good learning experience."
   },
   {
     title: "Process",
     paragraph:
-      "I started out by sketching the basic structure of the website on paper and defining the main sections. Next I started defining the visual style of the website and building the website design in Figma"
+      "I started by sketching the basic structure of the website on paper and defining the main sections. Next, I started defining the visual style of the website and building the website design in Figma"
   },
   {
     paragraph:
-      "This was my first project I've built from scratch using React. I knew it's a component based library so I tried organizing my code into components. I also tried to follow some of the more abstract good practice principles like KISS and DRY. Even so, looking back, there are a lot of things I could have done much better."
+      "This was the first project I've built from scratch using React. I knew it's a component-based library so I tried organizing my code into components. I also tried to follow some of the more abstract good practice principles like KISS and DRY. Even so, looking back, there are a lot of things I could have done much better."
   },
   {
     paragraph:
-      "This was also the first time I used Sass to handle the styling of the website. After using it and learning more, I'm begining to understand more clearly why there is a payoff in deciding on a good and maintainable structure from the start."
+      "This was also the first time I used Sass to handle the styling of the website. After using it and learning more, I'm beginning to understand more clearly why there is a payoff in deciding on a good and maintainable structure from the start."
   }
 ];
 
