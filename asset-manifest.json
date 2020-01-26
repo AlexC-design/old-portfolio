@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa5e4df9.chunk.css",
-    "main.js": "/static/js/main.000d04f6.chunk.js",
-    "main.js.map": "/static/js/main.000d04f6.chunk.js.map",
+    "main.css": "/static/css/main.d8fa234f.chunk.css",
+    "main.js": "/static/js/main.90eecdec.chunk.js",
+    "main.js.map": "/static/js/main.90eecdec.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.80db6e78.js",
     "runtime-main.js.map": "/static/js/runtime-main.80db6e78.js.map",
     "static/js/2.ce9bd8fa.chunk.js": "/static/js/2.ce9bd8fa.chunk.js",
     "static/js/2.ce9bd8fa.chunk.js.map": "/static/js/2.ce9bd8fa.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6339517a8855c07391681098aeca5c89.js": "/precache-manifest.6339517a8855c07391681098aeca5c89.js",
+    "precache-manifest.533e863f8b0efc9f59ed8c5af650b8f5.js": "/precache-manifest.533e863f8b0efc9f59ed8c5af650b8f5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fa5e4df9.chunk.css.map": "/static/css/main.fa5e4df9.chunk.css.map",
+    "static/css/main.d8fa234f.chunk.css.map": "/static/css/main.d8fa234f.chunk.css.map",
     "static/js/2.ce9bd8fa.chunk.js.LICENSE": "/static/js/2.ce9bd8fa.chunk.js.LICENSE",
     "static/media/ae.svg": "/static/media/ae.f021bf7d.svg",
     "static/media/ai.svg": "/static/media/ai.2c4a9d68.svg",
     "static/media/css.svg": "/static/media/css.f4dcaf36.svg",
     "static/media/figma.svg": "/static/media/figma.d561c1e1.svg",
-    "static/media/fo1.png": "/static/media/fo1.e0b9d0f0.png",
-    "static/media/fo2.png": "/static/media/fo2.59a38cec.png",
-    "static/media/fo3.png": "/static/media/fo3.ed8a78c7.png",
-    "static/media/fo4.png": "/static/media/fo4.589f70b2.png",
+    "static/media/fo1.png": "/static/media/fo1.fb4068f2.png",
+    "static/media/fo2.png": "/static/media/fo2.7a845a90.png",
+    "static/media/fo3.png": "/static/media/fo3.1ad4cb3e.png",
+    "static/media/fo4.png": "/static/media/fo4.af1d2e79.png",
     "static/media/github-icon.svg": "/static/media/github-icon.f24d4752.svg",
     "static/media/html.svg": "/static/media/html.80fb4d8e.svg",
     "static/media/js.svg": "/static/media/js.a4ec9a76.svg",
@@ -62,7 +62,7 @@
   "entrypoints": [
     "static/js/runtime-main.80db6e78.js",
     "static/js/2.ce9bd8fa.chunk.js",
-    "static/css/main.fa5e4df9.chunk.css",
-    "static/js/main.000d04f6.chunk.js"
+    "static/css/main.d8fa234f.chunk.css",
+    "static/js/main.90eecdec.chunk.js"
   ]
 }
