@@ -1,3 +1,3 @@
 Personal Portfolio Website
 
-https://alexc.design/#/
+https://alexc.design/
