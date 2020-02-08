@@ -1,3 +1,3 @@
-Personal Portfolio Website
+Personal Portfolio Website built with React
 
-https://alexc.design/#/
+https://alexc.design/
