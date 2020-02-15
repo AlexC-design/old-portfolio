@@ -207,7 +207,7 @@ const projects = [
     sliderImages: tasSlider,
     processImages: tasProcess,
     videos: tasVideos,
-    text: "Restaurant reservation app deisgn",
+    text: "Restaurant reservation app design",
     projectText: tasText,
     description:
       "Designing a mobile app that facilitates the process of restaurant reservations through the use of graphical layouts.",

@@ -98,7 +98,7 @@ const folioText = [
   {
     title: "Project Overview",
     paragraph:
-      "I've built this website in order to showcase the projects I've been working on, but also a practice. Now that I have a clearer understanding of React, I tried to apply all of the lessons I've learned while building previous projects and to focus more on best practices and paying more attention to the structuring of the code. I plan on expanding it further the more projects I build and the better I become when it comes to Web Development."
+      "I've built this website in order to showcase the projects I've been working on, but also as a practice. Now that I have a clearer understanding of React, I tried to apply all of the lessons I've learned while building previous projects and to focus more on best practices and paying more attention to the structuring of the code. I plan on expanding it further the more projects I build and the better I become when it comes to Web Development."
   },
   {
     paragraph:
