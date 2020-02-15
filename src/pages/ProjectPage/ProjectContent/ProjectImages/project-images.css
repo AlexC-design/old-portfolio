@@ -21,6 +21,10 @@
   border-radius: 10px;
 }
 
+.sirv-zoom-figure a {
+  opacity: 0;
+}
+
 .sirv-thumbnails ul > li > img {
   background-color: white;
   border-radius: 5px;
