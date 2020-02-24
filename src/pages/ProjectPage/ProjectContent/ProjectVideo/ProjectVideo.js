@@ -5,6 +5,7 @@ import "./project-video.css";
 export const ProjectVideo = ({ url, autoplay, controls, width, height }) => {
   return (
     <video
+      muted
       className="project-video"
       width={width}
       height={height}
